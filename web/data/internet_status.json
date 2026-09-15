@@ -1,0 +1,97 @@
+{
+  "time": "2026-09-14T00:58:16.848032+00:00",
+  "step": 4542,
+  "sex": "male",
+  "domain": "philosophy",
+  "url": "https://en.wikipedia.org/wiki/Queen_Mother_of_the_West",
+  "decision_mode": "exploit",
+  "epsilon": 0.05,
+  "base_candidate_values": {
+    "science": 0.0984,
+    "math": 0.1443,
+    "ai": 0.1333,
+    "physics": 0.171,
+    "philosophy": 0.1306,
+    "literature": 0.0455
+  },
+  "coverage_bonus": {
+    "science": 0.3,
+    "math": 0.3,
+    "ai": 0.3,
+    "physics": 0.3,
+    "philosophy": 0.3,
+    "literature": 0.3
+  },
+  "candidate_values": {
+    "science": 0.3984,
+    "math": 0.4443,
+    "ai": 0.4333,
+    "physics": 0.471,
+    "philosophy": 0.6306,
+    "literature": 0.3455
+  },
+  "reasoner_intent": {
+    "domain": "philosophy",
+    "cycle": 354,
+    "created_at": "2026-09-14T00:56:13.631736+00:00",
+    "source": "local_qwen_reflection"
+  },
+  "connectome_features": [
+    0.00522,
+    -0.01707,
+    -0.01225,
+    -0.02478,
+    0.00133,
+    -0.00198,
+    -0.47065,
+    0.48221,
+    -0.02575,
+    0.69924,
+    0.0716,
+    -0.0263,
+    0.00651,
+    0.00839,
+    0.22213,
+    0.0
+  ],
+  "predicted_reward": 0.1306,
+  "reward": 0.31,
+  "prediction_error": 0.1794,
+  "novel_words": 31,
+  "error": null,
+  "running": false,
+  "pid": 31556,
+  "pages": 4542,
+  "vocabulary": 197413,
+  "frontier": 30000,
+  "core_seed_words": 280,
+  "core_seed_sha256": "742ab45f1bb7ab85cef54863e903ae362158e529666038ffd9a49e70d57442bd",
+  "learned_domain_values": {
+    "science": 0.11,
+    "math": 0.155,
+    "ai": 0.147,
+    "physics": 0.176,
+    "philosophy": 0.145,
+    "literature": 0.055
+  },
+  "affect_proxies": {
+    "positive_reward_prediction_error": 0.0359,
+    "negative_reward_prediction_error": 0.0,
+    "novelty_drive": 0.031,
+    "choice_uncertainty": 0.7781,
+    "arousal": 0.0805,
+    "fatigue": 0.8196,
+    "persistence": 1.0
+  },
+  "affect_caveat": "engineered telemetry, not measured hormones or evidence of felt emotion",
+  "autonomy_contract": {
+    "runtime": "standalone Python background worker",
+    "external_model_calls": 0,
+    "operator_action_calls": 0,
+    "host_code_execution": false,
+    "controller_scope": "full source graph reduced to 16 functional groups; not a whole-brain neuron simulation"
+  },
+  "security": "HTTPS allowlist; GET-only; no cookies/JS/forms/files/auth; public-IP check; 1MB cap",
+  "claim": "novelty-seeking corpus exploration and exact text reconstruction, not verified truth or consciousness",
+  "finished_at": "2026-09-15T16:49:24.392054+00:00"
+}
