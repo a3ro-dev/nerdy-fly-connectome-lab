@@ -1,0 +1,59 @@
+{
+  "time": "2026-09-14T01:17:46.282876+00:00",
+  "cycle": 374,
+  "model": "qwen3.5:2b",
+  "source_url": "https://en.wikipedia.org/wiki/King_Father_of_the_East",
+  "source_domain": "philosophy",
+  "connectome_attention": "central_other=0.699, learning_memory=0.482, visual_processing=-0.471, modulatory_endocrine=0.222, descending=0.072",
+  "speech": "I generated a reflection that failed the source-evidence check; it is logged but not treated as an insight.",
+  "summary": "[UNVERIFIED MODEL OUTPUT — evidence quote not found] Dongwanggong (King Father of the East) is a tutelary deity of Taoist immortals, manifesting as yang energy and sometimes described as having a bird's face and tiger's tail.",
+  "model_summary": "Dongwanggong (King Father of the East) is a tutelary deity of Taoist immortals, manifesting as yang energy and sometimes described as having a bird's face and tiger's tail.",
+  "question": "What are the key attributes and mythological roles of Dongwanggong in Chinese mythology?",
+  "hypothesis": "Dongwanggong is associated with yang energy and serves as a guardian deity paired with Queen Mother of the West.",
+  "evidence_quote": "King Father of the East, also known as Dongwanggong (東王公), is the tutelary deity of the Taoist immortals.",
+  "grounded_quote_match": false,
+  "meta_clean": true,
+  "next_domain": "philosophy",
+  "exact_task": "Compute (70 + 7) * 7 - 7. Return only the integer.",
+  "expected": "532",
+  "observed": "482",
+  "correct": false,
+  "condition_results": {
+    "shuffled_labels": {
+      "observed": "482",
+      "correct": false,
+      "score": 8,
+      "evaluated": 366,
+      "accuracy": 0.0219
+    },
+    "identity_no_propagation": {
+      "observed": "486",
+      "correct": false,
+      "score": 6,
+      "evaluated": 366,
+      "accuracy": 0.0164
+    },
+    "real_connectome": {
+      "observed": "482",
+      "correct": false,
+      "score": 7,
+      "evaluated": 366,
+      "accuracy": 0.0191
+    }
+  },
+  "condition_order": [
+    "shuffled_labels",
+    "identity_no_propagation",
+    "real_connectome"
+  ],
+  "retrieved_memories": 4,
+  "score": 7,
+  "evaluated": 366,
+  "accuracy": 0.0191,
+  "error": null,
+  "running": false,
+  "pid": 31324,
+  "attribution": "language/reasoning from local Qwen; attention/context from reduced connectome; model weights are frozen",
+  "consciousness_claim": "none",
+  "finished_at": "2026-09-15T16:49:23.482391+00:00"
+}
