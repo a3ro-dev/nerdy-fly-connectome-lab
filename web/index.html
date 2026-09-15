@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Nerdy Fly Lab</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div><strong>NERDY FLY</strong> <span class="pill" id="sex-pill">loading · sandbox</span></div>
+    <div class="controls">
+      <label class="chooser">controller <select id="sex"><option value="male">male CNS</option><option value="female">female brain</option></select></label>
+      <button id="train">Train curriculum</button>
+      <button id="run" disabled>Run learned fly</button>
+      <button id="watch">Watch real web</button>
+      <button id="reset">Reset</button>
+    </div>
+  </header>
+  <main>
+    <section class="browser-shell">
+      <div class="browser-bar"><span>● ● ●</span><button id="back">←</button><div id="address">sandbox://search</div></div>
+      <div id="task">Loading curriculum…</div>
+      <div id="page" aria-live="polite"></div>
+    </section>
+    <aside>
+      <div class="fly-card">
+        <div class="fly-stage" id="fly-stage" aria-label="Telemetry-driven fruit-fly visualization">
+          <div class="fly-shadow"></div>
+          <div class="fly-body">
+            <i class="wing wing-left"></i><i class="wing wing-right"></i>
+            <i class="head"><span class="eye eye-left"></span><span class="eye eye-right"></span></i>
+            <i class="thorax"></i><i class="abdomen"></i>
+            <i class="leg l1"></i><i class="leg l2"></i><i class="leg l3"></i>
+            <i class="leg r1"></i><i class="leg r2"></i><i class="leg r3"></i>
+          </div>
+        </div>
+        <div><b>fly says</b><p id="speech">brain graph loading...</p></div>
+      </div>
+      <div class="curriculum-controls">
+        <label>domain <select id="domain"><option value="all">all</option><option>science</option><option>math</option><option>ai</option><option>physics</option><option>philosophy</option><option>literature</option><option value="self-model">self-model</option></select></label>
+        <label>lesson <select id="lesson"></select></label>
+      </div>
+      <canvas id="brain" width="620" height="360"></canvas>
+      <div id="dataset">loading canonical graphs…</div>
+      <div id="internet" class="internet-status">real-web explorer: checking status…</div>
+      <div id="autonomy" class="autonomy">autonomy contract: checking…</div>
+      <details open><summary>Hybrid reasoning layer</summary><div id="reasoning" class="reasoning">local Qwen is not started yet.</div></details>
+      <div class="talk"><input id="talk-input" maxlength="2000" placeholder="talk to the hybrid agent"><button id="talk-send">Send</button><p id="talk-output"></p></div>
+      <details open><summary>Live decision trace</summary><pre id="decision">waiting for a decision…</pre></details>
+      <details open><summary>Engineered affect proxies</summary><div id="affect" class="affect-grid">waiting for telemetry…</div></details>
+      <details><summary>MockMail reports from fly@localhost</summary><div id="mailbox" class="mailbox">No reports yet.</div></details>
+      <div class="stats">
+        <span>reward <b id="reward">0</b></span><span>step <b id="step">0</b></span><span>success <b id="success">—</b></span>
+      </div>
+      <details open><summary>Experiment log</summary><pre id="log"></pre></details>
+    </aside>
+  </main>
+  <footer>Curriculum + blinded self-model probes + web-derived memories. Behavior is not proof of consciousness.</footer>
+  <script src="app.js?v=12"></script>
+</body>
+</html>
