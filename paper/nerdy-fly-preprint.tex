@@ -1,0 +1,128 @@
+\documentclass[9pt,twocolumn]{extarticle}
+\usepackage[a4paper,margin=14mm,columnsep=5.5mm]{geometry}
+\usepackage{booktabs,tabularx,microtype,hyperref,xcolor,titlesec}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\hypersetup{colorlinks=true,linkcolor=black,citecolor=blue!55!black,urlcolor=blue!55!black}
+\setlength{\parindent}{1em}
+\setlength{\parskip}{0pt}
+\setlength{\textfloatsep}{6pt plus 2pt minus 2pt}
+\setlength{\floatsep}{5pt plus 2pt minus 2pt}
+\titlespacing*{\section}{0pt}{1.3ex plus .3ex}{.5ex}
+\titlespacing*{\subsection}{0pt}{1ex plus .2ex}{.35ex}
+\renewcommand{\refname}{References}
+\newcommand{\code}[1]{\texttt{#1}}
+
+\title{\vspace{-1.2em}\bfseries Can a Fly Connectome Route a Web Agent?\\
+\large A Controlled Negative Result from a Connectome-Constrained Explorer}
+\author{Akshat Singh\\\small Independent Researcher\\
+\small\url{https://github.com/a3ro-dev/nerdy-fly-connectome-lab}}
+\date{September 2026}
+
+\begin{document}
+\twocolumn[\maketitle
+\begin{abstract}
+We tested whether a fruit-fly connectome can supply a useful structural prior for an autonomous information-seeking agent. The MaleCNS v1.0 graph was streamed from its canonical tables, signed by predicted presynaptic transmitter, and reduced to 16 functional groups. A contextual bandit used the resulting fixed features to select among six subject frontiers; a frozen Qwen3.5 2B model produced source-conditioned reflections. The final archive contains 4,612 crawl events, 4,426 stored pages (74.8 MB), 197,413 vocabulary items, and 374 language cycles. Exploration was persistent but increasingly saturated: mean intrinsic reward was 0.442, falling to 0.250 over the last 500 events. On 366 procedurally generated arithmetic probes, real-connectome conditioning scored 1.91\%, compared with 2.19\% for shuffled labels and 1.64\% for identity/no propagation. The reduction therefore did not confer a measurable reasoning advantage. The result is narrower but useful: connectome-derived features can route a durable crawler, while neither fluent output nor autonomous runtime establishes biological cognition, reasoning, or consciousness.
+\end{abstract}
+\vspace{0.6em}]
+
+\section{Question}
+Complete synaptic wiring diagrams now cover an adult fly brain and, in the male dataset, the ventral nerve cord. MaleCNS reports 166,691 neurons, more than 125 million synaptic connections, and 11,691 cell types \cite{berg2026,google2026}. A connectome is still a static anatomical record. It omits the full membrane dynamics, plasticity, neuromodulation, sensory transduction, body, and developmental state required to reproduce an animal.
+
+We asked a deliberately smaller question: can this wiring record act as a fixed inductive bias for an artificial agent that chooses what to read? A second question tested the strongest tempting claim: does real-connectome conditioning improve a matched reasoning task over null controllers?
+
+\section{System}
+\subsection{Graph reduction}
+The canonical MaleCNS v1.0 annotation table contained 211,577 body records. Requiring an assigned superclass and excluding glia retained 166,700 records. This nine-neuron discrepancy from the paper is preserved rather than corrected by hand. The 1.1 GB weight table contained 151,856,684 directed segment-pair rows. Filtering both endpoints to the retained population and requiring a known presynaptic transmitter sign left 24,994,676 pairs representing 122,129,173 contacts.
+
+Acetylcholine, dopamine, octopamine, and serotonin were assigned positive signs; GABA, glutamate, and histamine negative signs. Unknown predictions were excluded. This scalar convention is a model choice, especially for modulators. Neurons were aggregated into 16 shared functional groups spanning sensory systems, central processing, learning and memory, ascending/descending pathways, motor output, and modulatory/endocrine classes. Absolute outgoing weights were row-normalized. A female FlyWire-derived graph was mapped to the same ontology for interface compatibility, but the reported unattended run used the male controller.
+
+\begin{figure}[t]
+\centering
+\fbox{\begin{minipage}{0.94\columnwidth}\centering\small
+MaleCNS tables $\rightarrow$ signed 16-group matrix $\rightarrow$\\
+bandit topic choice $\rightarrow$ allowlisted HTTPS fetch $\rightarrow$\\
+sanitized corpus + novelty reward $\rightarrow$ frozen Qwen reflection
+\end{minipage}}
+\caption{Runtime data flow. Web text cannot modify the allowlist or execute code.}
+\label{fig:flow}
+\end{figure}
+
+\subsection{Explorer and memory}
+At step $t$, four signed propagation rounds transformed a domain observation through the 16-group matrix. The resulting vector conditioned a tabular contextual bandit over science, mathematics, AI, physics, philosophy, and literature. The policy used $\epsilon=0.05$ and a coverage bonus. Reward was capped novel vocabulary per page, so it measured corpus expansion rather than truth or comprehension.
+
+The crawler accepted GET requests to an explicit HTTPS host allowlist, rejected private IP space and credentials, capped responses at 1 MB, and stored stripped text. It had no cookies, JavaScript, forms, authentication, posting, downloads, or host execution. Memory consisted of the sanitized page corpus, visited/frontier state, vocabulary, learned domain values, append-only event logs, and lexical retrieval over prior reflections. No model weights were updated.
+
+The loopback dashboard, crawler, and reasoner ran as Windows scheduled tasks, independent of the development session. Atomic checkpoints and timestamped manifests survived restarts.
+
+\subsection{Language and controls}
+Qwen3.5 2B ran locally through Ollama with deterministic decoding and structured JSON output. It received retrieved source text plus a compact connectome attention vector, then returned a summary, question, hypothesis, evidence quotation, and next-domain preference. Exact quotation matching marked unsupported summaries as unverified. This is source-conditioned generation by Qwen, not speech decoded from a fly.
+
+Each cycle also presented one exact arithmetic item under three matched conditions: the real reduced matrix, shuffled functional labels, and identity/no propagation. Condition order was randomized. The item format was procedurally varied but simple, for example $(a+b)c-b$. Exact string equality supplied the reward; no language-model judge was involved.
+
+\section{Results}
+The final cumulative archive contains 4,612 crawl events and 4,426 unique page files. Of the events, 4,487 completed without a recorded fetch error and 4,083 earned positive novelty reward. The corpus occupied 74,795,523 bytes and yielded 197,413 vocabulary entries. The frontier reached its 30,000-URL cap. Domain assignment was uneven (Table~\ref{tab:crawl}), partly because broad Wikipedia link traversal overwhelmed the intended subject labels.
+
+\begin{table}[h]
+\centering
+\caption{Final cumulative crawl archive.}
+\label{tab:crawl}
+\small
+\begin{tabular}{lr@{\qquad}lr}
+\toprule
+Domain & Events & Domain & Events\\
+\midrule
+Science & 994 & Philosophy & 1,469\\
+Mathematics & 406 & Literature & 963\\
+AI & 242 & Physics & 538\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Mean novelty reward was 0.442 across recorded events and 0.250 over the last 500. The decline is consistent with vocabulary saturation; it is not evidence of fatigue or loss of interest. Dashboard quantities labelled ``affect'' were engineered functions of novelty, uncertainty, and prediction error.
+
+The reasoner completed 374 cycles; 366 yielded evaluable outputs for all controls. All three arithmetic accuracies were near chance for this exact-output setup (Table~\ref{tab:reasoning}). Shuffled labels slightly outscored the real matrix. With no preregistered equivalence margin or repeated independent runs, we do not claim statistical equivalence. We can reject the practical claim that this configuration showed an obvious connectome advantage.
+
+\begin{table}[h]
+\centering
+\caption{Exact arithmetic controls ($n=366$ per condition).}
+\label{tab:reasoning}
+\small
+\begin{tabular}{lrr}
+\toprule
+Condition & Correct & Accuracy\\
+\midrule
+Real connectome & 7 & 1.91\%\\
+Shuffled labels & 8 & 2.19\%\\
+Identity/no propagation & 6 & 1.64\%\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+A separate 24-lesson curriculum was solved 24/24 by all three controller conditions after training. Because tasks were seen during training and every null controller matched the real graph, that result demonstrates policy memorization, not topology-dependent learning.
+
+\section{Interpretation}
+The engineering result worked: a connectome-derived feature map participated in topic selection while the system crawled unattended, checkpointed itself, and accumulated inspectable state. The biological claim did not. The graph was compressed by roughly four orders of magnitude in node count, and artificial action meanings, reward, memory, and language were supplied externally.
+
+There is no evidence here of a resurrected fly, subjective experience, self-awareness, or general reasoning. A generated statement about being simulated would only show that a pretrained language model can produce that statement. Consciousness cannot be inferred from verbal behavior in this setup, and no hormones or feelings were measured.
+
+The negative control is the useful part. Real-connectome conditioning failed to separate from shuffled and identity baselines on both the memorized curriculum and exact arithmetic. The present architecture is best described as an AI crawler with connectome-derived routing, not an agent powered by a fly brain.
+
+\section{Limits and next test}
+One run, one small language model, one coarse reduction, and a weak arithmetic benchmark cannot resolve whether richer connectome priors help information retrieval. Domain labels were noisy: pages about people, religion, or places could inherit ``math'' or ``AI'' from the frontier that discovered them. Novel-word reward favored breadth and rare tokens, not knowledge quality. Exact arithmetic also exposed Qwen 2B's weakness more than it tested research ability.
+
+The next experiment should freeze the corpus and compare real, degree-preserving rewired, shuffled-label, and identity controllers across many seeds. Held-out tasks should measure source retrieval, citation precision, coverage per fetch, contradiction detection, and multi-hop synthesis. Metrics and stopping rules should be preregistered. Only a reproducible improvement over matched nulls would justify a claim about connectome topology.
+
+\section{Reproducibility}
+Code, derived 16-group graphs, tests, the complete page corpus, event traces, and checkpoints are public \cite{repo}. The raw MaleCNS Feather files are excluded from Git because the edge table is about 1 GB; download locations and SHA-256 hashes are recorded in the repository. The crawler remains stopped after collection. The logged artifacts are sufficient to recompute the counts and control accuracies reported here.
+
+\begin{thebibliography}{9}\small
+\bibitem{berg2026} S. Berg et al., ``Sexual dimorphism in the complete Drosophila male central nervous system connectome,'' \emph{Cell}, 189(18):5504--5526.e15, 2026. doi:10.1016/j.cell.2026.08.015.
+\bibitem{google2026} M. Januszewski and V. Jain, ``A connectomics milestone: Mapping the complete male fruit fly brain,'' \href{https://research.google/blog/a-connectomics-milestone-mapping-the-complete-male-fruit-fly-brain/}{Google Research}, 2026.
+\bibitem{janelia2026} HHMI Janelia, ``Male CNS Connectome,'' dataset and project page, v1.0, 2026. \url{https://www.janelia.org/project-team/flyem/male-cns-connectome}
+\bibitem{dorkenwald2024} S. Dorkenwald et al., ``Neuronal wiring diagram of an adult brain,'' \emph{Nature}, 634:124--138, 2024. doi:10.1038/s41586-024-07558-y.
+\bibitem{shiu2024} P. K. Shiu et al., ``A Drosophila computational brain model reveals sensorimotor processing,'' \emph{Nature}, 634:210--219, 2024. doi:10.1038/s41586-024-07763-9.
+\bibitem{repo} A. Singh, ``Nerdy Fly Connectome Lab,'' software and experimental artifacts, 2026. \url{https://github.com/a3ro-dev/nerdy-fly-connectome-lab}
+\end{thebibliography}
+
+\end{document}
