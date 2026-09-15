@@ -1,5 +1,11 @@
 # Nerdy Fly Lab
 
+![Technical overview of the connectome reduction, web explorer, and matched controls](assets/nerdy-fly-system-overview.png)
+
+*MaleCNS wiring is reduced to a 16-group routing prior for a sandboxed web
+explorer. Intact, shuffled-label, and identity controls are evaluated on equal
+footing.*
+
 Read the two-page [preprint](output/pdf/nerdy-fly-preprint.pdf) or its
 [LaTeX source](paper/nerdy-fly-preprint.tex).
 
