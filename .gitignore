@@ -1,0 +1,20 @@
+# Local Python and Windows process state
+__pycache__/
+*.py[cod]
+work/*.pid
+work/*.stop
+work/*.stdout.log
+work/*.stderr.log
+
+# Reproducible but too large for normal GitHub hosting.  The README documents
+# the canonical upstream source and the graph-build command.
+data/male-cns-v1.0/*.feather
+
+# Timestamped backups duplicate the published final corpus and event traces.
+work/snapshots/
+
+# LaTeX intermediates; the source and final PDF are versioned.
+output/pdf/*.aux
+output/pdf/*.log
+output/pdf/*.out
+tmp/
