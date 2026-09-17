@@ -1,0 +1,205 @@
+{
+  "run_id": "research-03-303-real",
+  "task_id": "research-03",
+  "category": "research_retrieval",
+  "condition": "real",
+  "seed": 303,
+  "agy_version": "1.2.5",
+  "model": "gemini-3.8-flash-low",
+  "effort": "low",
+  "git_commit": "7f87908549f0af9007f106ca1f4a69d681eeeac8",
+  "manifest_sha256": "04420dac4c59e6f595cf34d6bda99c3a2beb890b3f6a630cb7e1737283a7ade6",
+  "workspace_initial_sha256": "d9d3800ca16f9f1f600fe1c7bbad178da75bacc5f8fdad6fe514e36da9664e44",
+  "start_time": "2026-09-17T08:20:07.763570+00:00",
+  "end_time": "2026-09-17T08:21:07.790863+00:00",
+  "wall_clock_time": 60.02729719999479,
+  "success": false,
+  "failure_mode": "grader_failure",
+  "infrastructure_failure": null,
+  "infrastructure_warning": null,
+  "tool_calls": 5,
+  "tool_errors": 0,
+  "steps": 1,
+  "model_calls": 1,
+  "input_tokens": 104668,
+  "output_tokens": 1612,
+  "estimated_cost": null,
+  "verification_result": false,
+  "memory_reads": 0,
+  "memory_writes": 0,
+  "controller_state_summary": {
+    "sensory_input_salience": 0.0625,
+    "integration_state": 0.03401692478619536,
+    "working_memory_pressure": 0.19013999943183107,
+    "retrieval_pressure": 0.20851631448646082,
+    "exploration_drive": 0.01677958632480433,
+    "exploitation_drive": 0.2960579539126818,
+    "uncertainty": 0.288,
+    "prediction_error": 0.3999999999999999,
+    "action_readiness": 0.04194838772403557,
+    "model_selection_preference": 0.06657303256613677,
+    "tool_selection_preference": 0.0479689022872788,
+    "persistence_write_memory_pressure": 0.06513999943183109,
+    "recurrent": [
+      -0.00022,
+      0.004956,
+      -0.002003,
+      -0.015445,
+      -5.4e-05,
+      0.01678,
+      0.017603,
+      0.06514,
+      -2.8e-05,
+      -0.068006,
+      0.046058,
+      0.008516,
+      0.025307,
+      0.04988,
+      0.445298,
+      0.0
+    ],
+    "step": 3
+  },
+  "controller_actions": [
+    {
+      "time": "2026-09-17T08:20:36.606837+00:00",
+      "event": "route",
+      "run_id": "research-03-303-real",
+      "step": 0,
+      "controller_state": {
+        "sensory_input_salience": 0.3125,
+        "integration_state": 0.2521456309320374,
+        "working_memory_pressure": 0.17262317416534143,
+        "retrieval_pressure": 0.3033062776087251,
+        "exploration_drive": 0.6477811913049856,
+        "exploitation_drive": 0.3295167537398699,
+        "uncertainty": 0.5,
+        "prediction_error": 0.0,
+        "action_readiness": 0.46893938299013693,
+        "model_selection_preference": 0.27427762657838556,
+        "tool_selection_preference": 0.3826249443940532,
+        "persistence_write_memory_pressure": 0.04762317416534142,
+        "recurrent": [
+          -5.9e-05,
+          0.006982,
+          -0.002352,
+          -0.028454,
+          -0.000217,
+          0.647781,
+          0.017257,
+          0.047623,
+          -0.003359,
+          -0.500932,
+          0.079517,
+          0.103306,
+          0.263733,
+          0.685733,
+          0.441721,
+          0.0
+        ],
+        "step": 2
+      },
+      "decision": "act",
+      "requested": "file_manipulation",
+      "provider": "mock",
+      "tool": null,
+      "top_capabilities": [
+        [
+          "research",
+          0.544334
+        ],
+        [
+          "file_manipulation",
+          0.490682
+        ],
+        [
+          "web_navigation",
+          0.194334
+        ],
+        [
+          "critique",
+          0.15
+        ],
+        [
+          "verification",
+          0.15
+        ]
+      ]
+    },
+    {
+      "time": "2026-09-17T08:20:56.982656+00:00",
+      "event": "route",
+      "run_id": "research-03-303-real",
+      "step": 0,
+      "controller_state": {
+        "sensory_input_salience": 0.0625,
+        "integration_state": 0.03401692478619536,
+        "working_memory_pressure": 0.19013999943183107,
+        "retrieval_pressure": 0.20851631448646082,
+        "exploration_drive": 0.01677958632480433,
+        "exploitation_drive": 0.2960579539126818,
+        "uncertainty": 0.5,
+        "prediction_error": 0.0,
+        "action_readiness": 0.04194838772403557,
+        "model_selection_preference": 0.06657303256613677,
+        "tool_selection_preference": 0.0479689022872788,
+        "persistence_write_memory_pressure": 0.06513999943183109,
+        "recurrent": [
+          -0.00022,
+          0.004956,
+          -0.002003,
+          -0.015445,
+          -5.4e-05,
+          0.01678,
+          0.017603,
+          0.06514,
+          -2.8e-05,
+          -0.068006,
+          0.046058,
+          0.008516,
+          0.025307,
+          0.04988,
+          0.445298,
+          0.0
+        ],
+        "step": 3
+      },
+      "decision": "continue",
+      "requested": "file_manipulation",
+      "provider": "mock",
+      "tool": null,
+      "top_capabilities": [
+        [
+          "critique",
+          0.15
+        ],
+        [
+          "verification",
+          0.15
+        ],
+        [
+          "retrieval",
+          0.062555
+        ],
+        [
+          "memory_retrieval",
+          0.062555
+        ],
+        [
+          "memory_consolidation",
+          0.019542
+        ]
+      ]
+    }
+  ],
+  "final_output": "Task completed successfully.\n\n### Status\n- **Task ID**: `research-03-303-real`\n- **Criteria evaluated**: Based on [protocol.txt](file:///C:/Users/akshat/AppData/Local/Temp/flyos-benchmark-yod7vlf3/workspace/protocol.txt) (\"Report experimental items only; controls are excluded\"), the conflicting count between [count-a.txt](file:///C:/Users/akshat/AppData/Local/Temp/flyos-benchmark-yod7vlf3/workspace/count-a.txt) and [count-b.txt](file:///C:/Users/akshat/AppData/Local/Temp/flyos-benchmark-yod7vlf3/workspace/count-b.txt) was resolved to `116`.\n- **Output**: Written to [answer.txt](file:///C:/Users/akshat/AppData/Local/Temp/flyos-benchmark-yod7vlf3/workspace/answer.txt) and verified.\n- **Trace**: Verified and trace retrieved via `fly_get_trace`.\n",
+  "grader_result": {
+    "success": false,
+    "checks": {
+      "answer.txt": false
+    },
+    "type": "exact_files"
+  },
+  "agy_returncode": 0,
+  "agy_stderr": ""
+}

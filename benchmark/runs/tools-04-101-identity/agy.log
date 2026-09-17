@@ -1,0 +1,518 @@
+I0917 14:24:01.885704       1 resolver.go:85] Model ID gemini-3.8-flash-low not in local config, defaulting to CCPA
+I0917 14:24:01.886288       1 resolver.go:111] Model resolved via default
+I0917 14:24:01.892513      50 server.go:1568] Starting language server process with pid 8584
+I0917 14:24:01.893094      50 server.go:1621] Language server version: 1.2.5
+I0917 14:24:01.893094      50 server.go:614] Language server will attempt to listen on host localhost
+I0917 14:24:01.901160      50 server.go:629] Language server listening on random port at 62129 for HTTPS (gRPC)
+I0917 14:24:01.901747      50 server.go:637] Language server listening on random port at 62130 for HTTP
+W0917 14:24:03.081730      72 cache.go:135] Cache(loadCodeAssistResponse): Singleflight refresh failed: error getting token source: You are not logged into Antigravity.
+E0917 14:24:03.082289      72 errorreport.go:224] error getting token source: You are not logged into Antigravity.
+E0917 14:24:03.083356      72 errorreport.go:224] Failed to poll ListExperiments: error getting token source: You are not logged into Antigravity.
+I0917 14:24:03.083356      72 model_configs.go:65] Auth mode is unspecified, skipping fetchAvailableModels and returning empty response
+I0917 14:24:03.091036      78 store_client.go:680] summary store: starting background reconciliation (trigger=startup)
+W0917 14:24:03.092656      50 cache.go:135] Cache(loadCodeAssistResponse): Singleflight refresh failed: error getting token source: You are not logged into Antigravity.
+E0917 14:24:03.092656      50 errorreport.go:224] error getting token source: You are not logged into Antigravity.
+W0917 14:24:03.093186      50 cache.go:135] Cache(userInfo): Singleflight refresh failed: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0917 14:24:03.093186      50 errorreport.go:224] failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+I0917 14:24:03.100291      78 store_client.go:730] summary store: reconciliation complete, synced 117 records
+W0917 14:24:03.100849      78 cache.go:135] Cache(loadCodeAssistResponse): Singleflight refresh failed: error getting token source: You are not logged into Antigravity.
+E0917 14:24:03.100849      78 errorreport.go:224] error getting token source: You are not logged into Antigravity.
+W0917 14:24:03.100849      78 cache.go:135] Cache(userInfo): Singleflight refresh failed: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0917 14:24:03.100849      78 errorreport.go:224] failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+W0917 14:24:03.104757      50 cache.go:135] Cache(loadCodeAssistResponse): Singleflight refresh failed: error getting token source: You are not logged into Antigravity.
+E0917 14:24:03.105298      50 errorreport.go:224] error getting token source: You are not logged into Antigravity.
+W0917 14:24:03.105298      50 cache.go:135] Cache(userInfo): Singleflight refresh failed: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0917 14:24:03.105298      50 errorreport.go:224] failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+W0917 14:24:03.105298      50 cache.go:135] Cache(loadCodeAssistResponse): Singleflight refresh failed: error getting token source: You are not logged into Antigravity.
+E0917 14:24:03.105298      50 errorreport.go:224] error getting token source: You are not logged into Antigravity.
+W0917 14:24:03.105298      50 cache.go:135] Cache(userInfo): Singleflight refresh failed: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0917 14:24:03.105298      50 errorreport.go:224] failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+W0917 14:24:03.105884      50 launchmanager.go:69] Entering local chrome mode! This is WRONG unless you are running tests or in eval mode on Linux.
+W0917 14:24:03.107495      50 defaults.go:776] failed to get cs path: cs path /usr/bin/cs invalid
+I0917 14:24:03.107495      50 manager.go:108] Creating trajectory store manager with proto store and SQLite store
+W0917 14:24:03.109592      50 cache.go:135] Cache(loadCodeAssistResponse): Singleflight refresh failed: error getting token source: You are not logged into Antigravity.
+E0917 14:24:03.109592      50 errorreport.go:224] error getting token source: You are not logged into Antigravity.
+W0917 14:24:03.109592      50 cache.go:135] Cache(userInfo): Singleflight refresh failed: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0917 14:24:03.109592      50 errorreport.go:224] failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+I0917 14:24:03.116519     203 manager.go:88] Migration [MIGRATION_ID_SIDECAR_USER_CONFIG_BYPASS] is disabled, skipping entirely
+I0917 14:24:03.116519     203 manager.go:91] Migration [MIGRATION_ID_SANITY_CHECK_PROJECT_URIS] is enabled
+I0917 14:24:03.117069     203 manager.go:100] Migration [MIGRATION_ID_SANITY_CHECK_PROJECT_URIS] already has status MIGRATION_STATUS_COMPLETED, skipping
+I0917 14:24:03.117069     203 manager.go:91] Migration [MIGRATION_ID_PLUGIN_ENABLEMENT] is enabled
+I0917 14:24:03.117069     203 manager.go:100] Migration [MIGRATION_ID_PLUGIN_ENABLEMENT] already has status MIGRATION_STATUS_COMPLETED, skipping
+I0917 14:24:03.117069     203 manager.go:91] Migration [MIGRATION_ID_BUILTIN_SIDECARS_TO_PLUGINS] is enabled
+I0917 14:24:03.117069     203 manager.go:100] Migration [MIGRATION_ID_BUILTIN_SIDECARS_TO_PLUGINS] already has status MIGRATION_STATUS_COMPLETED, skipping
+I0917 14:24:03.117069     203 manager.go:88] Migration [MIGRATION_ID_LIN_BUILTIN_TO_MARKETPLACE] is disabled, skipping entirely
+I0917 14:24:03.122590      50 server.go:3031] Auth succeeded, refreshing features and managers
+W0917 14:24:03.122590      50 cache.go:135] Cache(loadCodeAssistResponse): Singleflight refresh failed: error getting token source: You are not logged into Antigravity.
+E0917 14:24:03.122590      50 errorreport.go:224] error getting token source: You are not logged into Antigravity.
+E0917 14:24:03.123148      50 errorreport.go:224] Failed to poll ListExperiments: error getting token source: You are not logged into Antigravity.
+I0917 14:24:03.123148      50 server.go:3037] State refresh took 0ms
+I0917 14:24:03.123148      50 server.go:3047] [RemoteControl] Subscription callback triggered.
+I0917 14:24:03.123148      50 server.go:3050] [RemoteControl] RemoteControlEnabled value: false
+I0917 14:24:03.123148      50 server.go:3677] [RemoteControl] Session toggle is off, staying disconnected
+I0917 14:24:03.123148      50 server.go:3388] [RemoteControl] Resolved proxyServerURL: ""
+I0917 14:24:03.123148      50 profiler.go:231] Continuous pprof profiling is disabled.
+I0917 14:24:03.123148     209 manager.go:88] Migration [MIGRATION_ID_SIDECAR_USER_CONFIG_BYPASS] is disabled, skipping entirely
+I0917 14:24:03.123679     209 manager.go:91] Migration [MIGRATION_ID_SANITY_CHECK_PROJECT_URIS] is enabled
+I0917 14:24:03.123679      50 server.go:2526] initialized server successfully in 1.2311659s
+W0917 14:24:03.123679     308 cache.go:135] Cache(loadCodeAssistResponse): Singleflight refresh failed: error getting token source: You are not logged into Antigravity.
+I0917 14:24:03.123679     209 manager.go:100] Migration [MIGRATION_ID_SANITY_CHECK_PROJECT_URIS] already has status MIGRATION_STATUS_COMPLETED, skipping
+E0917 14:24:03.123679     308 errorreport.go:224] error getting token source: You are not logged into Antigravity.
+I0917 14:24:03.124204     209 manager.go:91] Migration [MIGRATION_ID_PLUGIN_ENABLEMENT] is enabled
+W0917 14:24:03.124204     308 cache.go:135] Cache(userInfo): Singleflight refresh failed: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0917 14:24:03.124204     308 errorreport.go:224] failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+I0917 14:24:03.124204     209 manager.go:100] Migration [MIGRATION_ID_PLUGIN_ENABLEMENT] already has status MIGRATION_STATUS_COMPLETED, skipping
+I0917 14:24:03.124204     209 manager.go:91] Migration [MIGRATION_ID_BUILTIN_SIDECARS_TO_PLUGINS] is enabled
+I0917 14:24:03.124728     209 manager.go:100] Migration [MIGRATION_ID_BUILTIN_SIDECARS_TO_PLUGINS] already has status MIGRATION_STATUS_COMPLETED, skipping
+I0917 14:24:03.124728     209 manager.go:88] Migration [MIGRATION_ID_LIN_BUILTIN_TO_MARKETPLACE] is disabled, skipping entirely
+I0917 14:24:03.124728       1 auto_updater.go:252] Last check was less than 15 minutes ago, skipping update (fast path)
+I0917 14:24:03.124728       1 common.go:151] Launching CLI mode
+E0917 14:24:03.124728       1 launchsteps.go:84] Failed to resolve GeminiDir ".gemini": .gemini must be an absolute path: path is not absolute, falling back to default
+I0917 14:24:03.124728       1 common.go:173] CLI app data directory: C:\Users\akshat\.gemini\antigravity-cli
+I0917 14:24:03.124728       1 server.go:299] Creating CLI server backend: product=antigravity workspaceDirs=[C:\Users\akshat\AppData\Local\Temp\flyos-benchmark-s2wq6dnt\workspace] appDataDir=C:\Users\akshat\.gemini\antigravity-cli cascadeManager=true codeAssist=true
+I0917 14:24:03.124728       1 auth_provider.go:952] [AuthProvider] SetEnableBusinessLogin called with enable: true
+W0917 14:24:03.131798     326 cache.go:135] Cache(loadCodeAssistResponse): Singleflight refresh failed: error getting token source: You are not logged into Antigravity.
+E0917 14:24:03.131798     326 errorreport.go:224] error getting token source: You are not logged into Antigravity.
+W0917 14:24:03.131798     326 cache.go:135] Cache(userInfo): Singleflight refresh failed: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0917 14:24:03.131798     326 errorreport.go:224] failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+I0917 14:24:03.132838       1 project.go:77] project: created project "workspace" (id=b92f4906-c622-48f4-bc40-48bf37e0699d) at C:\Users\akshat\.gemini\config\projects\b92f4906-c622-48f4-bc40-48bf37e0699d.json
+I0917 14:24:03.132838       1 server.go:2082] Backend project ID updated dynamically to: b92f4906-c622-48f4-bc40-48bf37e0699d
+W0917 14:24:03.135042     333 cache.go:135] Cache(loadCodeAssistResponse): Singleflight refresh failed: error getting token source: You are not logged into Antigravity.
+E0917 14:24:03.135575     333 errorreport.go:224] error getting token source: You are not logged into Antigravity.
+W0917 14:24:03.135575     333 cache.go:135] Cache(userInfo): Singleflight refresh failed: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0917 14:24:03.135575     333 errorreport.go:224] failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+I0917 14:24:03.136102       1 analytics.go:186] CLI startup completed (took 1.2515878s)
+I0917 14:24:03.136102       1 printmode.go:174] Print mode: starting (promptLength=971, model="gemini-3.8-flash-low", conversationID="")
+I0917 14:24:03.136102       1 manager.go:427] Initializing CLI store manager for workspace C:\Users\akshat\AppData\Local\Temp\flyos-benchmark-s2wq6dnt\workspace
+W0917 14:24:03.136102     326 cache.go:135] Cache(loadCodeAssistResponse): Singleflight refresh failed: error getting token source: You are not logged into Antigravity.
+E0917 14:24:03.136102     326 errorreport.go:224] error getting token source: You are not logged into Antigravity.
+W0917 14:24:03.136102     326 cache.go:135] Cache(userInfo): Singleflight refresh failed: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0917 14:24:03.136102     326 errorreport.go:224] failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+W0917 14:24:03.136627     326 cache.go:135] Cache(loadCodeAssistResponse): Singleflight refresh failed: error getting token source: You are not logged into Antigravity.
+E0917 14:24:03.136627     326 errorreport.go:224] error getting token source: You are not logged into Antigravity.
+W0917 14:24:03.136627     326 cache.go:135] Cache(userInfo): Singleflight refresh failed: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0917 14:24:03.136627     326 errorreport.go:224] failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+I0917 14:24:03.137678     337 server.go:3492] GetG1Credits: starting fetch
+W0917 14:24:03.137678     126 cache.go:135] Cache(loadCodeAssistResponse): Singleflight refresh failed: error getting token source: You are not logged into Antigravity.
+E0917 14:24:03.137678     126 errorreport.go:224] error getting token source: You are not logged into Antigravity.
+W0917 14:24:03.138207     126 cache.go:135] Cache(userInfo): Singleflight refresh failed: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0917 14:24:03.138207     126 errorreport.go:224] failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0917 14:24:03.138207     337 credits_manager.go:42] failed to refresh G1 credits: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+I0917 14:24:03.138207       1 cli_setting_manager.go:153] applyUserSettings: stored shared config permissions: allow=34 deny=0 ask=0 from C:\Users\akshat\.gemini\config\config.json
+I0917 14:24:03.138207       1 cli_setting_manager.go:92] CLI settings initialized: permissions=&{Allow:[mcp(nerdy-fly/*) escalate_admin(*) read_file(.) write_file(.) read_file(C:\Users\akshat\AppData\Local\Temp\flyos-benchmark-s2wq6dnt\workspace) write_file(C:\Users\akshat\AppData\Local\Temp\flyos-benchmark-s2wq6dnt\workspace)] Deny:[] Ask:[]}, toolPermission=request-review
+W0917 14:24:03.138207     326 cache.go:135] Cache(loadCodeAssistResponse): Singleflight refresh failed: error getting token source: You are not logged into Antigravity.
+E0917 14:24:03.138207     326 errorreport.go:224] error getting token source: You are not logged into Antigravity.
+W0917 14:24:03.138207     326 cache.go:135] Cache(userInfo): Singleflight refresh failed: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0917 14:24:03.138207     326 errorreport.go:224] failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+I0917 14:24:03.145629       1 hooks_manager.go:53] loaded 0 named hooks from 0 hooks.json file(s)
+I0917 14:24:03.145629       1 manager.go:603] CLI store manager initialized successfully
+I0917 14:24:03.145629     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:03.145629       1 session.go:77] Print mode: enabling terminal sandbox for this session
+I0917 14:24:03.145629       1 printmode.go:715] Print mode: applying agent mode accept-edits
+I0917 14:24:03.145629       1 manager.go:1355] SetCycleMode called: accept-edits
+I0917 14:24:03.146155       1 printmode.go:365] Print mode: not authenticated, trying silent auth
+W0917 14:24:03.146155     337 cache.go:135] Cache(loadCodeAssistResponse): Singleflight refresh failed: error getting token source: You are not logged into Antigravity.
+E0917 14:24:03.146155     337 errorreport.go:224] error getting token source: You are not logged into Antigravity.
+E0917 14:24:03.146155     337 credits_manager.go:42] failed to refresh G1 credits: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+I0917 14:24:03.146703     357 keyring.go:64] keyringAuth: loaded token, expiry=2026-09-17 14:31:07.9393253 +0530 IST expired=false
+I0917 14:24:03.377216       1 auth.go:148] ChainedAuth: authenticated via keyring (effective: keyring)
+I0917 14:24:03.377216       1 server_oauth.go:196] applyAuthResult: email=gobitsnbytes@gmail.com, authMethod=consumer, quotaProject=
+I0917 14:24:03.377216       1 server_oauth.go:201] OAuth: authenticated successfully as gobitsnbytes@gmail.com
+I0917 14:24:03.377216       1 server_oauth.go:207] b.codeAssistClient.AuthProvider (0x343a2aa1a0f0) is same as b.cliAuth (0x343a2aa1a0f0)
+W0917 14:24:03.377740     435 cache.go:163] Failed to refresh cache in background: admin controls not applicable
+W0917 14:24:03.377740     427 cache.go:163] Failed to refresh cache in background: admin controls not applicable
+I0917 14:24:05.586402      46 http_helpers.go:299] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xb9a76e5766f1847
+I0917 14:24:06.230965      47 http_helpers.go:299] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x8dd7d90c755fdf30
+I0917 14:24:06.258567       1 model_resolver.go:93] Resolving model gemini-3.8-flash-low
+I0917 14:24:06.258567       1 model_config_manager.go:327] Propagating selected model override to backend: label="Gemini 3.8 Flash (Low)"
+I0917 14:24:06.258567     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:06.258567     341 experiment_manager.go:66] Starting experiment refresh after login
+I0917 14:24:06.258567       1 printmode.go:367] Print mode: silent auth succeeded
+I0917 14:24:06.258567     340 quota_manager.go:45] doRefreshQuota: starting reload (force=true)
+I0917 14:24:06.433472     341 server.go:3677] [RemoteControl] Session toggle is off, staying disconnected
+I0917 14:24:06.433472     341 server.go:3388] [RemoteControl] Resolved proxyServerURL: ""
+I0917 14:24:06.433472     341 experiment_manager.go:70] Experiments refreshed after login
+I0917 14:24:06.433472     482 manager.go:1284] Reloading system slash commands
+I0917 14:24:08.203293     474 http_helpers.go:299] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x767b37fa0543cee7
+I0917 14:24:10.358078     488 http_helpers.go:299] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xc1b0beb152ca03f6
+I0917 14:24:10.596693     474 model_resolver.go:93] Resolving model gemini-3.8-flash-low
+I0917 14:24:10.596693     474 model_config_manager.go:327] Propagating selected model override to backend: label="Gemini 3.8 Flash (Low)"
+I0917 14:24:10.596693     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:10.596693     340 quota_manager.go:45] doRefreshQuota: starting reload (force=true)
+I0917 14:24:10.596693     341 experiment_manager.go:66] Starting experiment refresh after login
+I0917 14:24:10.596693     502 model_resolver.go:93] Resolving model gemini-3.8-flash-low
+I0917 14:24:10.596693     502 model_config_manager.go:327] Propagating selected model override to backend: label="Gemini 3.8 Flash (Low)"
+I0917 14:24:10.596693     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:10.608955       1 model_resolver.go:93] Resolving model gemini-3.8-flash-low
+I0917 14:24:10.608955       1 conversation_manager.go:467] Starting new conversation (agent=false)
+I0917 14:24:10.608955       1 server.go:1142] Creating new cascade trajectory (agentScript=false)
+I0917 14:24:10.608955       1 server.go:1145] Conversation using project ID: b92f4906-c622-48f4-bc40-48bf37e0699d
+I0917 14:24:10.628424       1 server.go:1177] Created conversation 01846762-5811-4905-a07f-108270c7e1a0
+I0917 14:24:10.628424       1 server.go:3079] GetConversationDetail: found conversation 01846762-5811-4905-a07f-108270c7e1a0 (active=true)
+I0917 14:24:10.636580       1 server.go:3079] GetConversationDetail: found conversation 01846762-5811-4905-a07f-108270c7e1a0 (active=true)
+I0917 14:24:10.636580       1 conversation_manager.go:514] project: switching to conversation belonging to project ID: b92f4906-c622-48f4-bc40-48bf37e0699d
+I0917 14:24:10.636580       1 server.go:2082] Backend project ID updated dynamically to: b92f4906-c622-48f4-bc40-48bf37e0699d
+I0917 14:24:10.637122       1 cli_setting_manager.go:218] ApplyProjectPermissionGrants: no grants for project "workspace", cleared project permissions
+I0917 14:24:10.637122     530 manager.go:1307] Reloading system slash commands and skills
+I0917 14:24:10.637122     530 manager.go:1284] Reloading system slash commands
+I0917 14:24:10.644818     530 manager.go:1288] Slash commands unchanged, skipping update
+I0917 14:24:10.653853       1 hooks_manager.go:53] loaded 0 named hooks from 0 hooks.json file(s)
+I0917 14:24:10.653853       1 conversation_manager.go:560] project: synced active project to "workspace" (id=b92f4906-c622-48f4-bc40-48bf37e0699d) from conversation switch
+I0917 14:24:10.653853       1 conversation_manager.go:842] Streaming conversation 01846762-5811-4905-a07f-108270c7e1a0
+I0917 14:24:10.654885       1 server.go:3079] GetConversationDetail: found conversation 01846762-5811-4905-a07f-108270c7e1a0 (active=true)
+I0917 14:24:10.654885     662 manager.go:1307] Reloading system slash commands and skills
+I0917 14:24:10.658300     662 manager.go:1284] Reloading system slash commands
+I0917 14:24:10.659747       1 server.go:1186] Starting conversation update stream for 01846762-5811-4905-a07f-108270c7e1a0
+I0917 14:24:10.659747       1 session.go:168] Print mode: conversation=01846762-5811-4905-a07f-108270c7e1a0, sending message
+I0917 14:24:10.659747       1 manager.go:1284] Reloading system slash commands
+I0917 14:24:10.673473     662 manager.go:1288] Slash commands unchanged, skipping update
+I0917 14:24:10.673473       1 manager.go:1288] Slash commands unchanged, skipping update
+I0917 14:24:10.673473       1 conversation_manager.go:654] Forwarding user message to conversation 01846762-5811-4905-a07f-108270c7e1a0 (items=1, media=0)
+I0917 14:24:10.673473       1 server.go:1736] Sending user message to conversation 01846762-5811-4905-a07f-108270c7e1a0 (items=1, media=0)
+I0917 14:24:10.676662       1 latency_breakdown.go:142] SEND_USER_CASCADE_MESSAGE_LATENCY latency breakdown: map[active_user_state_latency_ms:0 blocking:false cascade_id:01846762-5811-4905-a07f-108270c7e1a0 cascade_send_latency_ms:2 hydrate_slash_commands_latency_ms:0 load_trajectory_latency_ms:0 media_count:0 media_summaries_latency_ms:0 message_origin:AGENT_MESSAGE_ORIGIN_UNSPECIFIED refresh_browser_state_latency_ms:0 resolve_agent_config_latency_ms:0 save_media_latency_ms:0 saved_media_count:0 status:OK total_latency_ms:2 trajectory_id:55733810-26bd-4d86-bc3a-c9021dc53a07]
+I0917 14:24:10.779830     341 server.go:3677] [RemoteControl] Session toggle is off, staying disconnected
+I0917 14:24:10.779830     341 server.go:3388] [RemoteControl] Resolved proxyServerURL: ""
+I0917 14:24:10.779830     341 experiment_manager.go:70] Experiments refreshed after login
+I0917 14:24:10.779830     341 experiment_manager.go:66] Starting experiment refresh after login
+I0917 14:24:10.779830    1040 manager.go:1284] Reloading system slash commands
+I0917 14:24:10.786879    1040 manager.go:1288] Slash commands unchanged, skipping update
+W0917 14:24:10.885117     730 declarative_config_loader.go:272] skipping component during resolution: empty component: prompt section "subagent_reminder"
+I0917 14:24:10.895106     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:10.955285     341 server.go:3677] [RemoteControl] Session toggle is off, staying disconnected
+I0917 14:24:10.955285     341 server.go:3388] [RemoteControl] Resolved proxyServerURL: ""
+I0917 14:24:10.955285     341 experiment_manager.go:70] Experiments refreshed after login
+I0917 14:24:10.955285    1368 manager.go:1284] Reloading system slash commands
+I0917 14:24:10.961686    1368 manager.go:1288] Slash commands unchanged, skipping update
+I0917 14:24:11.109654     340 quota_manager.go:45] doRefreshQuota: starting reload (force=true)
+I0917 14:24:11.699493     820 http_helpers.go:299] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x52a379089b1ad845 ResponseID: 5qqrarusPK3Qg8UP8K6hUQ
+I0917 14:24:12.700115     501 http_helpers.go:299] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x4cbf7fec6906c6a4
+I0917 14:24:13.079697    1343 http_helpers.go:299] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x1bdacd004f02b1ee ResponseID: 56qrarWWELLmqfkPq5az2A0
+I0917 14:24:13.080280     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:13.080280     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:13.080280     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:13.080836     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:13.080836     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:13.081366     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:13.081366     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:13.081889     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:13.162364     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:13.162364     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:13.162917     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:13.165374     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:13.166790     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:13.186051     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:13.186051     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:15.072708    1405 http_helpers.go:299] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x88abe302d3999f5d ResponseID: 6aqrasbSJNmkg8UP-djXqA0
+I0917 14:24:15.072708     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:15.073316     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:15.073316     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:15.073316     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:15.073860     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:15.074386     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:15.074386     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:15.074386     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:15.430951     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:15.430951     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:15.431499     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:15.434184     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:15.434750     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:15.453755     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:15.454370     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:17.609484    1624 http_helpers.go:299] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x6943de3ce8d07f55 ResponseID: 7Kqrary1Bd3Eg8UPzp-U2Aw
+I0917 14:24:17.610010     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:17.610010     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:17.610010     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:17.610594     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:17.610594     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:17.610594     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:17.610594     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:17.611147     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:17.696027     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:17.696027     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:17.696586     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:17.698805     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:17.699330     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:17.721634     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:17.722196     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:20.097745    1754 http_helpers.go:299] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x47a531e39ad191e5 ResponseID: 7qqraqW0GvDEg8UP2aiIuQo
+I0917 14:24:20.098508     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:20.098508     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:20.098508     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:20.098508     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:20.099066     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:20.101619     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:20.102290     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:20.102290     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:20.174954     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:20.175518     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:20.175518     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:20.178312     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:20.178858     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:20.199800     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:20.199800     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:22.771551     365 http_helpers.go:299] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x902d765cb6ca7b5c ResponseID: 8aqrapS8DbDdg8UPjOjD2A0
+I0917 14:24:22.771551     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:22.772083     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:22.772083     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:22.772083     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:22.772756     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:22.772756     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:22.773309     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:22.773309     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:22.852149     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:22.852707     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:22.853266     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:22.855514     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:22.876872     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:22.877435     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:25.366198    1989 http_helpers.go:299] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x2f45234f35f6bf74 ResponseID: 86qraoW0IIqwmNMPxZi5oQ0
+I0917 14:24:25.366198     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:25.366721     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:25.366721     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:25.367282     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:25.367282     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:25.367282     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:25.367282     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:25.367841     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:25.446058     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:25.446603     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:25.447126     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:25.447648     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:25.448177     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:25.451768     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:25.454536     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:27.791064    2014 http_helpers.go:299] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xa1ec7d75e230f72 ResponseID: 9qqratucCZXkg8UP_LD9gAM
+I0917 14:24:27.791064     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:27.791573     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:27.791573     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:27.791573     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:27.792099     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:27.792099     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:27.792099     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:27.792630     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:27.859151     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:27.860261     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:27.860804     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:27.861529     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:27.864743     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:27.869930     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:30.560956    2046 http_helpers.go:299] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x5a78762e293514fe ResponseID: -KqraqfhJdy2g8UP8IyL4Q4
+I0917 14:24:30.561940     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:30.561940     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:30.561940     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:30.561940     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:30.561940     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:30.581111     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:30.581879     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:30.581879     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:30.651384     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:30.653059     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:30.653628     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:30.654177     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:30.656282     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:30.660006     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:33.059801    2092 http_helpers.go:299] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x4794cb80a63eb21 ResponseID: -6qrasedE-fEg8UPiMmI0Q4
+I0917 14:24:33.059801     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:33.060802     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:33.060802     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:33.060802     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:33.060802     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:33.062801     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:33.062801     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:33.062801     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:33.139931     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:33.140982     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:33.142043     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:33.145013     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:33.145521     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:33.171785     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:33.172315     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:35.116299    2211 http_helpers.go:299] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xe3ea5c60a2041fb9 ResponseID: _qqraq22C8Wyg8UPqfjk2Q4
+I0917 14:24:35.116299     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:35.116978     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:35.116978     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:35.116978     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:35.117543     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:35.120307     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:35.120812     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:35.120812     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:35.220362     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:35.222076     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:35.222625     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:35.225946     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:35.229835     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:41.909337    2248 http_helpers.go:299] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x65babb9f331dec24 ResponseID: AKuraueGFZn_4-EPtLHwiQI
+I0917 14:24:41.910109     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:41.910109     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:41.910109     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:41.910627     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:41.910627     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:41.913369     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:41.913369     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:41.914032     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:41.985172     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:41.986378     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:41.987657     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:41.990605     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:41.992124     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:41.994625     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:45.467136    2289 http_helpers.go:299] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x7a53c0ae760bed24 ResponseID: BqurapvNLt3Eg8UPxqmU2Aw
+I0917 14:24:45.467657     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:45.467657     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:45.467657     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:45.468294     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:45.468294     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:45.468294     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:45.468837     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:45.468837     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:45.545495     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:45.546590     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:45.547693     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:45.550969     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:45.551901     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:45.571189     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:45.572292     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:47.948861    2309 http_helpers.go:299] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xbb1196a14a2bb0c8 ResponseID: CauravyCPcPFg8UPwq_x2Aw
+I0917 14:24:47.948861     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:47.949847     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:47.949847     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:47.949847     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:47.949847     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:47.952863     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:47.952863     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:47.952863     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:48.031492     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:48.033033     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:48.034065     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:48.035049     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:48.037049     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:48.041561     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:49.941917    2430 http_helpers.go:299] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x13c96f23bb8ccb35 ResponseID: DKurav_aKrbEg8UPhIXc2QE
+I0917 14:24:49.941917     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:49.942584     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:49.942584     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:49.942584     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:49.942584     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:49.943124     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:49.943124     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:49.943124     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:50.017002     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:50.018130     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:50.022288     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:50.032275     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:53.970655     975 http_helpers.go:299] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x45d86ae59b8e4e18 ResponseID: D6urauKOB4qq4-EPwYHUgQ0
+I0917 14:24:53.970655     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:53.971174     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:53.971174     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:53.971727     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:53.971727     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:53.972253     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:53.972253     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:53.972791     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:54.045441     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:54.046529     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:54.048210     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:54.049365     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:54.050890     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:54.073518     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:54.075874     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:55.608007    2509 http_helpers.go:299] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xc1d23c3538aeb983 ResponseID: EquravbPJKijg8UPrPK6qQQ
+I0917 14:24:55.608625     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:55.608625     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:55.608625     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:55.608625     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:55.609179     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:55.609179     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:55.609179     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:55.609737     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:55.675148     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:55.676286     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:55.677931     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:55.681347     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:55.681347     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:55.701208     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:55.702254     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:58.423908    2724 http_helpers.go:299] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xc18f45becc5a219 ResponseID: FKuravOTKP3dg8UPm_bzuAE
+I0917 14:24:58.423908     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:58.424430     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:58.424430     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:58.424430     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:58.424997     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:58.433187     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:58.433187     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:58.433842     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:58.507564     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:58.509275     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:58.513302     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:58.513302     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:24:58.517164     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:25:00.120417    2761 http_helpers.go:299] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xb12aa1b19b4de88f ResponseID: F6urarHCBNy2g8UP8IyL4Q4
+I0917 14:25:00.120417     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:25:00.121111     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:25:00.121111     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:25:00.121111     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:25:00.121668     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:25:00.121668     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:25:00.121668     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:25:00.121668     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:25:00.122225     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:25:00.123920     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:25:00.128467     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:25:00.132414     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:25:00.133897     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:25:03.387734    2793 http_helpers.go:299] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xbf377a271c378830 ResponseID: GKuratbYNYqwmNMPxZi5oQ0
+I0917 14:25:03.387734     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:25:03.388521     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:25:03.388521     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:25:03.388521     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:25:03.389112     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:25:03.389112     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:25:03.389112     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:25:03.389112     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:25:03.453931     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:25:03.456121     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:25:03.460121     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:25:03.463877     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:25:03.464490     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:25:05.156509    2816 http_helpers.go:299] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xd0120c6162b2ceb2 ResponseID: HKurarSMAbDdg8UPjOjD2A0
+I0917 14:25:05.156509     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:25:05.157155     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:25:05.157155     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:25:05.157155     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:25:05.157699     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:25:05.160137     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:25:05.160137     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:25:05.160660     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:25:05.234321     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:25:05.236496     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:25:05.240201     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:25:05.244965     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:25:05.251592     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:25:06.751676    2847 http_helpers.go:299] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xb6f560e7d2aa3fe2 ResponseID: HaurapHxG8694-EPn4WZgAQ
+I0917 14:25:06.751676     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:25:06.752232     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:25:06.752754     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:25:06.753279     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:25:06.757618     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:25:06.758143     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:25:06.774252     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:25:06.775335     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:25:06.783352     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:25:06.784384     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:25:06.856738     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:25:06.888309     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:25:06.889990     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:25:06.955166     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:25:06.958471     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:25:06.969190     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:25:06.971840     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:25:06.974595     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:25:07.080647     337 server.go:3492] GetG1Credits: starting fetch
+I0917 14:25:07.103566       1 manager.go:783] CLI store manager shutting down
+I0917 14:25:07.105923       1 conversation_manager.go:799] Stopping conversation stream
+I0917 14:25:07.105923     663 server.go:1234] Stream goroutine exited for 01846762-5811-4905-a07f-108270c7e1a0, sending completion signal
+I0917 14:25:07.106451    2903 server.go:2890] Language server shutting down
+I0917 14:25:07.106451    2903 server.go:2895] Waiting for migrations to complete to prevent partial migration state...
+E0917 14:25:07.132084     152 file_watcher.go:194] skipping empty or temp file: 
+E0917 14:25:07.132084     152 file_watcher.go:194] skipping empty or temp file: 
+E0917 14:25:07.132084     152 file_watcher.go:194] skipping empty or temp file: 

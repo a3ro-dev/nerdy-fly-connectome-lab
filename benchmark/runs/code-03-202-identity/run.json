@@ -1,0 +1,335 @@
+{
+  "run_id": "code-03-202-identity",
+  "task_id": "code-03",
+  "category": "coding_debugging",
+  "condition": "identity",
+  "seed": 202,
+  "agy_version": "1.2.5",
+  "model": "gemini-3.8-flash-low",
+  "effort": "low",
+  "git_commit": "7f87908549f0af9007f106ca1f4a69d681eeeac8",
+  "manifest_sha256": "04420dac4c59e6f595cf34d6bda99c3a2beb890b3f6a630cb7e1737283a7ade6",
+  "workspace_initial_sha256": "ccae69c363ecc99def1c3e92012c44fd5af11ca7f75323dae9b69488f7b887cf",
+  "start_time": "2026-09-17T07:40:33.516783+00:00",
+  "end_time": "2026-09-17T07:41:51.876729+00:00",
+  "wall_clock_time": 78.35994709999795,
+  "success": true,
+  "failure_mode": null,
+  "infrastructure_failure": null,
+  "infrastructure_warning": null,
+  "tool_calls": 9,
+  "tool_errors": 0,
+  "steps": 1,
+  "model_calls": 1,
+  "input_tokens": 101629,
+  "output_tokens": 1739,
+  "estimated_cost": null,
+  "verification_result": true,
+  "memory_reads": 0,
+  "memory_writes": 0,
+  "controller_state_summary": {
+    "sensory_input_salience": 0.4375,
+    "integration_state": 0.0,
+    "working_memory_pressure": 0.125,
+    "retrieval_pressure": 1.0,
+    "exploration_drive": 0.32420239612962465,
+    "exploitation_drive": 1.0,
+    "uncertainty": 0.288,
+    "prediction_error": 0.3999999999999999,
+    "action_readiness": 0.16210119806481232,
+    "model_selection_preference": 0.0,
+    "tool_selection_preference": 0.6426777565111974,
+    "persistence_write_memory_pressure": 0.0,
+    "recurrent": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.324202,
+      0.495213,
+      0.0,
+      0.0,
+      0.0,
+      0.961153,
+      0.879665,
+      0.288725,
+      0.324202,
+      0.769775,
+      0.0
+    ],
+    "step": 5
+  },
+  "controller_actions": [
+    {
+      "time": "2026-09-17T07:41:09.830580+00:00",
+      "event": "route",
+      "run_id": "code-03-202-identity",
+      "step": 0,
+      "controller_state": {
+        "sensory_input_salience": 0.6875,
+        "integration_state": 0.0,
+        "working_memory_pressure": 0.125,
+        "retrieval_pressure": 1.0,
+        "exploration_drive": 0.8733285618815259,
+        "exploitation_drive": 1.0,
+        "uncertainty": 0.5,
+        "prediction_error": 0.0,
+        "action_readiness": 0.43666428094076293,
+        "model_selection_preference": 0.0,
+        "tool_selection_preference": 0.8772670308721967,
+        "persistence_write_memory_pressure": 0.0,
+        "recurrent": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.873329,
+          0.881205,
+          0.0,
+          0.0,
+          0.0,
+          0.881205,
+          0.881205,
+          0.507557,
+          0.873329,
+          0.767538,
+          0.0
+        ],
+        "step": 2
+      },
+      "decision": "act",
+      "requested": "file_manipulation",
+      "provider": "mock",
+      "tool": null,
+      "top_capabilities": [
+        [
+          "retrieval",
+          0.65
+        ],
+        [
+          "shell_execution",
+          0.61318
+        ],
+        [
+          "verification",
+          0.5
+        ],
+        [
+          "file_manipulation",
+          0.480999
+        ],
+        [
+          "data_analysis",
+          0.35
+        ]
+      ]
+    },
+    {
+      "time": "2026-09-17T07:41:19.466816+00:00",
+      "event": "route",
+      "run_id": "code-03-202-identity",
+      "step": 0,
+      "controller_state": {
+        "sensory_input_salience": 0.3125,
+        "integration_state": 0.0,
+        "working_memory_pressure": 0.125,
+        "retrieval_pressure": 1.0,
+        "exploration_drive": 0.49413959068864133,
+        "exploitation_drive": 1.0,
+        "uncertainty": 0.5,
+        "prediction_error": 0.0,
+        "action_readiness": 0.24706979534432066,
+        "model_selection_preference": 0.0,
+        "tool_selection_preference": 0.6876824509785504,
+        "persistence_write_memory_pressure": 0.0,
+        "recurrent": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.49414,
+          0.495472,
+          0.0,
+          0.0,
+          0.0,
+          0.881225,
+          0.881225,
+          0.389181,
+          0.49414,
+          0.769713,
+          0.0
+        ],
+        "step": 3
+      },
+      "decision": "continue",
+      "requested": "file_manipulation",
+      "provider": "mock",
+      "tool": null,
+      "top_capabilities": [
+        [
+          "shell_execution",
+          0.556305
+        ],
+        [
+          "verification",
+          0.5
+        ],
+        [
+          "retrieval",
+          0.3
+        ],
+        [
+          "memory_retrieval",
+          0.3
+        ],
+        [
+          "api_interaction",
+          0.206305
+        ]
+      ]
+    },
+    {
+      "time": "2026-09-17T07:41:29.883443+00:00",
+      "event": "route",
+      "run_id": "code-03-202-identity",
+      "step": 0,
+      "controller_state": {
+        "sensory_input_salience": 0.1875,
+        "integration_state": 0.0,
+        "working_memory_pressure": 0.125,
+        "retrieval_pressure": 0.695474929349971,
+        "exploration_drive": 0.38309573971508526,
+        "exploitation_drive": 0.745474929349971,
+        "uncertainty": 0.5,
+        "prediction_error": 0.0,
+        "action_readiness": 0.19154786985754263,
+        "model_selection_preference": 0.0,
+        "tool_selection_preference": 0.43928533453252816,
+        "persistence_write_memory_pressure": 0.0,
+        "recurrent": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.383096,
+          0.879665,
+          0.0,
+          0.0,
+          0.0,
+          0.495475,
+          0.495475,
+          0.327849,
+          0.383096,
+          0.769773,
+          0.0
+        ],
+        "step": 4
+      },
+      "decision": "continue",
+      "requested": "file_manipulation",
+      "provider": "mock",
+      "tool": null,
+      "top_capabilities": [
+        [
+          "data_analysis",
+          0.35
+        ],
+        [
+          "retrieval",
+          0.208642
+        ],
+        [
+          "memory_retrieval",
+          0.208642
+        ],
+        [
+          "critique",
+          0.15
+        ],
+        [
+          "verification",
+          0.15
+        ]
+      ]
+    },
+    {
+      "time": "2026-09-17T07:41:39.529173+00:00",
+      "event": "route",
+      "run_id": "code-03-202-identity",
+      "step": 0,
+      "controller_state": {
+        "sensory_input_salience": 0.4375,
+        "integration_state": 0.0,
+        "working_memory_pressure": 0.125,
+        "retrieval_pressure": 1.0,
+        "exploration_drive": 0.32420239612962465,
+        "exploitation_drive": 1.0,
+        "uncertainty": 0.5,
+        "prediction_error": 0.0,
+        "action_readiness": 0.16210119806481232,
+        "model_selection_preference": 0.0,
+        "tool_selection_preference": 0.6426777565111974,
+        "persistence_write_memory_pressure": 0.0,
+        "recurrent": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.324202,
+          0.495213,
+          0.0,
+          0.0,
+          0.0,
+          0.961153,
+          0.879665,
+          0.288725,
+          0.324202,
+          0.769775,
+          0.0
+        ],
+        "step": 5
+      },
+      "decision": "continue",
+      "requested": "verification",
+      "provider": "mock",
+      "tool": null,
+      "top_capabilities": [
+        [
+          "shell_execution",
+          0.892803
+        ],
+        [
+          "verification",
+          0.5
+        ],
+        [
+          "retrieval",
+          0.3
+        ],
+        [
+          "memory_retrieval",
+          0.3
+        ],
+        [
+          "api_interaction",
+          0.192803
+        ]
+      ]
+    }
+  ],
+  "final_output": "Task completed successfully.\n\n### Status Summary\n- **Task ID**: `code-03-202-identity`\n- **Action**: Updated [`stable_unique`](file:///C:/Users/akshat/AppData/Local/Temp/flyos-benchmark-_tzpey0r/workspace/solution.py#L1-L2) in `solution.py` to preserve order of first appearance using `dict.fromkeys` instead of `set`, without sorting the input.\n- **Verification**: Verified objectively via `fly_act` with `verification_type=\"unittest\"`; tests passed.\n- **Trace**: Final trace retrieved via `fly_get_trace`.\n",
+  "grader_result": {
+    "success": true,
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "----------------------------------------------------------------------\nRan 1 test in 0.000s\n\nOK\n",
+    "type": "command"
+  },
+  "agy_returncode": 0,
+  "agy_stderr": ""
+}

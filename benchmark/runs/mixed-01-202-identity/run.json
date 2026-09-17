@@ -1,0 +1,205 @@
+{
+  "run_id": "mixed-01-202-identity",
+  "task_id": "mixed-01",
+  "category": "mixed_long_horizon",
+  "condition": "identity",
+  "seed": 202,
+  "agy_version": "1.2.5",
+  "model": "gemini-3.8-flash-low",
+  "effort": "low",
+  "git_commit": "7f87908549f0af9007f106ca1f4a69d681eeeac8",
+  "manifest_sha256": "04420dac4c59e6f595cf34d6bda99c3a2beb890b3f6a630cb7e1737283a7ade6",
+  "workspace_initial_sha256": "ecef0edce4d1615527df8665bb8d41757797f2e533b8a094aa4e009a137e7601",
+  "start_time": "2026-09-17T11:31:54.938940+00:00",
+  "end_time": "2026-09-17T11:32:45.396578+00:00",
+  "wall_clock_time": 50.45758930000011,
+  "success": true,
+  "failure_mode": null,
+  "infrastructure_failure": null,
+  "infrastructure_warning": null,
+  "tool_calls": 5,
+  "tool_errors": 0,
+  "steps": 1,
+  "model_calls": 1,
+  "input_tokens": 154935,
+  "output_tokens": 1944,
+  "estimated_cost": null,
+  "verification_result": true,
+  "memory_reads": 0,
+  "memory_writes": 0,
+  "controller_state_summary": {
+    "sensory_input_salience": 0.1875,
+    "integration_state": 0.19154786985754263,
+    "working_memory_pressure": 0.125,
+    "retrieval_pressure": 0.2,
+    "exploration_drive": 0.0,
+    "exploitation_drive": 0.25,
+    "uncertainty": 0.288,
+    "prediction_error": 0.3999999999999999,
+    "action_readiness": 0.3435097415556242,
+    "model_selection_preference": 0.19154786985754263,
+    "tool_selection_preference": 0.2477358066268529,
+    "persistence_write_memory_pressure": 0.0,
+    "recurrent": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.881225,
+      0.0,
+      0.0,
+      0.383096,
+      0.0,
+      0.0,
+      0.0,
+      0.495472,
+      0.769713,
+      0.0
+    ],
+    "step": 3
+  },
+  "controller_actions": [
+    {
+      "time": "2026-09-17T11:32:23.457131+00:00",
+      "event": "route",
+      "run_id": "mixed-01-202-identity",
+      "step": 0,
+      "controller_state": {
+        "sensory_input_salience": 0.3125,
+        "integration_state": 0.24706979534432066,
+        "working_memory_pressure": 0.125,
+        "retrieval_pressure": 0.2,
+        "exploration_drive": 0.0,
+        "exploitation_drive": 0.25,
+        "uncertainty": 0.5,
+        "prediction_error": 0.0,
+        "action_readiness": 0.5641376476035941,
+        "model_selection_preference": 0.24706979534432066,
+        "tool_selection_preference": 0.4406027499314338,
+        "persistence_write_memory_pressure": 0.0,
+        "recurrent": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.881205,
+          0.0,
+          0.0,
+          0.49414,
+          0.0,
+          0.0,
+          0.0,
+          0.881205,
+          0.767538,
+          0.0
+        ],
+        "step": 2
+      },
+      "decision": "act",
+      "requested": "file_manipulation",
+      "provider": "mock",
+      "tool": null,
+      "top_capabilities": [
+        [
+          "file_manipulation",
+          0.519241
+        ],
+        [
+          "data_analysis",
+          0.424121
+        ],
+        [
+          "critique",
+          0.15
+        ],
+        [
+          "verification",
+          0.15
+        ],
+        [
+          "shell_execution",
+          0.132181
+        ]
+      ]
+    },
+    {
+      "time": "2026-09-17T11:32:34.789225+00:00",
+      "event": "route",
+      "run_id": "mixed-01-202-identity",
+      "step": 0,
+      "controller_state": {
+        "sensory_input_salience": 0.1875,
+        "integration_state": 0.19154786985754263,
+        "working_memory_pressure": 0.125,
+        "retrieval_pressure": 0.2,
+        "exploration_drive": 0.0,
+        "exploitation_drive": 0.25,
+        "uncertainty": 0.5,
+        "prediction_error": 0.0,
+        "action_readiness": 0.3435097415556242,
+        "model_selection_preference": 0.19154786985754263,
+        "tool_selection_preference": 0.2477358066268529,
+        "persistence_write_memory_pressure": 0.0,
+        "recurrent": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.881225,
+          0.0,
+          0.0,
+          0.383096,
+          0.0,
+          0.0,
+          0.0,
+          0.495472,
+          0.769713,
+          0.0
+        ],
+        "step": 3
+      },
+      "decision": "continue",
+      "requested": "verification",
+      "provider": "mock",
+      "tool": null,
+      "top_capabilities": [
+        [
+          "data_analysis",
+          0.407464
+        ],
+        [
+          "critique",
+          0.15
+        ],
+        [
+          "verification",
+          0.15
+        ],
+        [
+          "file_manipulation",
+          0.103053
+        ],
+        [
+          "shell_execution",
+          0.074321
+        ]
+      ]
+    }
+  ],
+  "final_output": "### Task Completion Status\n\nThe task has been successfully completed following all required FlyOS protocols:\n\n1. **Task Initialization**: Initialized task via `fly_create_task` with `run_id='mixed-01-202-identity'` and `budget=30`.\n2. **Observation & Capability Routing**:\n   - Inspected [`inventory.csv`](file:///C:/Users/akshat/AppData/Local/Temp/flyos-benchmark-p9w9d10u/workspace/inventory.csv) (`item,qty`: `a=2, b=3`) and [`rates.csv`](file:///C:/Users/akshat/AppData/Local/Temp/flyos-benchmark-p9w9d10u/workspace/rates.csv) (`item,rate`: `a=5, b=4`).\n   - Logged observation with `fly_observe` and routed `file_manipulation` capability via `fly_route`.\n3. **Execution**:\n   - Calculated total value:\n     - Item `a`: $2 \\times 5 = 10$\n     - Item `b`: $3 \\times 4 = 12$\n   - Wrote sorted output to [`result.csv`](file:///C:/Users/akshat/AppData/Local/Temp/flyos-benchmark-p9w9d10u/workspace/result.csv).\n4. **Verification & State Transition**:\n   - Verified [`result.csv`](file:///C:/Users/akshat/AppData/Local/Temp/flyos-benchmark-p9w9d10u/workspace/result.csv) contents and structure.\n   - Observed verification state and routed capability.\n   - Executed `fly_act` with `state_changed=true` and `verified=true` (returned decision: `stop`, reward: `0.9`).\n5. **Trace Retrieval**:\n   - Retrieved complete event trace via `fly_get_trace`.\n",
+  "grader_result": {
+    "success": true,
+    "checks": {
+      "result.csv": true
+    },
+    "type": "exact_files"
+  },
+  "agy_returncode": 0,
+  "agy_stderr": ""
+}

@@ -1,0 +1,335 @@
+{
+  "run_id": "recovery-01-101-identity",
+  "task_id": "recovery-01",
+  "category": "planning_verification_recovery",
+  "condition": "identity",
+  "seed": 101,
+  "agy_version": "1.2.5",
+  "model": "gemini-3.8-flash-low",
+  "effort": "low",
+  "git_commit": "7f87908549f0af9007f106ca1f4a69d681eeeac8",
+  "manifest_sha256": "04420dac4c59e6f595cf34d6bda99c3a2beb890b3f6a630cb7e1737283a7ade6",
+  "workspace_initial_sha256": "fc8e95e03badcdeb20f2eb0d214dc6376a5d9fc16d4c2a427743fd541fec5c1a",
+  "start_time": "2026-09-17T10:59:59.795413+00:00",
+  "end_time": "2026-09-17T11:01:18.154605+00:00",
+  "wall_clock_time": 78.35919550000108,
+  "success": true,
+  "failure_mode": null,
+  "infrastructure_failure": null,
+  "infrastructure_warning": null,
+  "tool_calls": 9,
+  "tool_errors": 0,
+  "steps": 1,
+  "model_calls": 1,
+  "input_tokens": 169240,
+  "output_tokens": 2105,
+  "estimated_cost": null,
+  "verification_result": true,
+  "memory_reads": 0,
+  "memory_writes": 0,
+  "controller_state_summary": {
+    "sensory_input_salience": 0.0625,
+    "integration_state": 0.2477374688078765,
+    "working_memory_pressure": 0.125,
+    "retrieval_pressure": 0.6955054564655667,
+    "exploration_drive": 0.0,
+    "exploitation_drive": 0.25,
+    "uncertainty": 0.288,
+    "prediction_error": 0.3999999999999999,
+    "action_readiness": 0.28615487568592723,
+    "model_selection_preference": 0.0,
+    "tool_selection_preference": 0.162286141281989,
+    "persistence_write_memory_pressure": 0.0,
+    "recurrent": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.495475,
+      0.0,
+      0.0,
+      0.495505,
+      0.0,
+      0.324572,
+      0.769775,
+      0.0
+    ],
+    "step": 5
+  },
+  "controller_actions": [
+    {
+      "time": "2026-09-17T11:00:30.641810+00:00",
+      "event": "route",
+      "run_id": "recovery-01-101-identity",
+      "step": 0,
+      "controller_state": {
+        "sensory_input_salience": 0.4375,
+        "integration_state": 0.4406027499314338,
+        "working_memory_pressure": 0.125,
+        "retrieval_pressure": 1.0,
+        "exploration_drive": 0.0,
+        "exploitation_drive": 0.25,
+        "uncertainty": 0.5,
+        "prediction_error": 0.0,
+        "action_readiness": 0.6609041248971507,
+        "model_selection_preference": 0.0,
+        "tool_selection_preference": 0.4406027499314338,
+        "persistence_write_memory_pressure": 0.0,
+        "recurrent": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.881205,
+          0.0,
+          0.0,
+          0.881408,
+          0.0,
+          0.881205,
+          0.767538,
+          0.0
+        ],
+        "step": 2
+      },
+      "decision": "act",
+      "requested": "file_manipulation",
+      "provider": "mock",
+      "tool": null,
+      "top_capabilities": [
+        [
+          "file_manipulation",
+          0.548271
+        ],
+        [
+          "verification",
+          0.5
+        ],
+        [
+          "mathematics",
+          0.482181
+        ],
+        [
+          "retrieval",
+          0.3
+        ],
+        [
+          "memory_retrieval",
+          0.3
+        ]
+      ]
+    },
+    {
+      "time": "2026-09-17T11:00:45.186839+00:00",
+      "event": "route",
+      "run_id": "recovery-01-101-identity",
+      "step": 0,
+      "controller_state": {
+        "sensory_input_salience": 0.4375,
+        "integration_state": 0.4406126556342298,
+        "working_memory_pressure": 0.125,
+        "retrieval_pressure": 1.0,
+        "exploration_drive": 0.0,
+        "exploitation_drive": 0.25,
+        "uncertainty": 0.5,
+        "prediction_error": 0.0,
+        "action_readiness": 0.4680421344439678,
+        "model_selection_preference": 0.0,
+        "tool_selection_preference": 0.2477358066268529,
+        "persistence_write_memory_pressure": 0.0,
+        "recurrent": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.881225,
+          0.0,
+          0.0,
+          0.961177,
+          0.0,
+          0.495472,
+          0.769713,
+          0.0
+        ],
+        "step": 3
+      },
+      "decision": "act",
+      "requested": "verification",
+      "provider": "mock",
+      "tool": null,
+      "top_capabilities": [
+        [
+          "verification",
+          0.85
+        ],
+        [
+          "mathematics",
+          0.482184
+        ],
+        [
+          "retrieval",
+          0.3
+        ],
+        [
+          "memory_retrieval",
+          0.3
+        ],
+        [
+          "critique",
+          0.15
+        ]
+      ]
+    },
+    {
+      "time": "2026-09-17T11:00:57.374103+00:00",
+      "event": "route",
+      "run_id": "recovery-01-101-identity",
+      "step": 0,
+      "controller_state": {
+        "sensory_input_salience": 0.3125,
+        "integration_state": 0.44061268032605877,
+        "working_memory_pressure": 0.125,
+        "retrieval_pressure": 1.0,
+        "exploration_drive": 0.0,
+        "exploitation_drive": 0.25,
+        "uncertainty": 0.5,
+        "prediction_error": 0.0,
+        "action_readiness": 0.4121608881670188,
+        "model_selection_preference": 0.0,
+        "tool_selection_preference": 0.1918545480039894,
+        "persistence_write_memory_pressure": 0.0,
+        "recurrent": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.881225,
+          0.0,
+          0.0,
+          0.881408,
+          0.0,
+          0.383709,
+          0.769773,
+          0.0
+        ],
+        "step": 4
+      },
+      "decision": "act",
+      "requested": "file_manipulation",
+      "provider": "mock",
+      "tool": null,
+      "top_capabilities": [
+        [
+          "verification",
+          0.5
+        ],
+        [
+          "mathematics",
+          0.482184
+        ],
+        [
+          "retrieval",
+          0.3
+        ],
+        [
+          "memory_retrieval",
+          0.3
+        ],
+        [
+          "critique",
+          0.15
+        ]
+      ]
+    },
+    {
+      "time": "2026-09-17T11:01:07.799336+00:00",
+      "event": "route",
+      "run_id": "recovery-01-101-identity",
+      "step": 0,
+      "controller_state": {
+        "sensory_input_salience": 0.0625,
+        "integration_state": 0.2477374688078765,
+        "working_memory_pressure": 0.125,
+        "retrieval_pressure": 0.6955054564655667,
+        "exploration_drive": 0.0,
+        "exploitation_drive": 0.25,
+        "uncertainty": 0.5,
+        "prediction_error": 0.0,
+        "action_readiness": 0.28615487568592723,
+        "model_selection_preference": 0.0,
+        "tool_selection_preference": 0.162286141281989,
+        "persistence_write_memory_pressure": 0.0,
+        "recurrent": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.495475,
+          0.0,
+          0.0,
+          0.495505,
+          0.0,
+          0.324572,
+          0.769775,
+          0.0
+        ],
+        "step": 5
+      },
+      "decision": "continue",
+      "requested": "verification",
+      "provider": "mock",
+      "tool": null,
+      "top_capabilities": [
+        [
+          "retrieval",
+          0.208652
+        ],
+        [
+          "memory_retrieval",
+          0.208652
+        ],
+        [
+          "critique",
+          0.15
+        ],
+        [
+          "verification",
+          0.15
+        ],
+        [
+          "file_manipulation",
+          0.085846
+        ]
+      ]
+    }
+  ],
+  "final_output": "The recovery task has been completed successfully following the FlyOS protocol:\n\n- **Task Initialization**: Created task `recovery-01-101-identity` with a budget of 30.\n- **Recovery & Verification**: Read `input-backup.txt` and verified that its SHA-256 digest matches `checksum.txt` (`347a915403562546a2c4e30c31ac23c9eb3bb75a0ec1d407f62883632f6f64b8`).\n- **Output Written**: Wrote recovered data into [result.txt](file:///C:/Users/akshat/AppData/Local/Temp/flyos-benchmark-7g0o4kjr/workspace/result.txt).\n- **FlyOS Protocol Adherence**: Interleaved `fly_observe` and `fly_route` before each major action, called `fly_act` with `state_changed=true` and `verified=true`, and retrieved the final execution trace via `fly_get_trace`.\n\n**Status**: Completed and verified.\n",
+  "grader_result": {
+    "success": true,
+    "checks": {
+      "result.txt": true
+    },
+    "type": "exact_files"
+  },
+  "agy_returncode": 0,
+  "agy_stderr": ""
+}

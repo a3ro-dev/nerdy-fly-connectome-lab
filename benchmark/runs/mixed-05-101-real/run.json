@@ -1,0 +1,400 @@
+{
+  "run_id": "mixed-05-101-real",
+  "task_id": "mixed-05",
+  "category": "mixed_long_horizon",
+  "condition": "real",
+  "seed": 101,
+  "agy_version": "1.2.5",
+  "model": "gemini-3.8-flash-low",
+  "effort": "low",
+  "git_commit": "7f87908549f0af9007f106ca1f4a69d681eeeac8",
+  "manifest_sha256": "04420dac4c59e6f595cf34d6bda99c3a2beb890b3f6a630cb7e1737283a7ade6",
+  "workspace_initial_sha256": "1936878d92c8dc5eaa8f62e679d08fe9fa22e1267342d02dc65b6b46535b4ab8",
+  "start_time": "2026-09-17T11:57:17.650815+00:00",
+  "end_time": "2026-09-17T11:58:28.305874+00:00",
+  "wall_clock_time": 70.6550644999952,
+  "success": true,
+  "failure_mode": null,
+  "infrastructure_failure": null,
+  "infrastructure_warning": null,
+  "tool_calls": 11,
+  "tool_errors": 0,
+  "steps": 1,
+  "model_calls": 1,
+  "input_tokens": 148053,
+  "output_tokens": 2008,
+  "estimated_cost": null,
+  "verification_result": true,
+  "memory_reads": 0,
+  "memory_writes": 0,
+  "controller_state_summary": {
+    "sensory_input_salience": 0.1875,
+    "integration_state": 0.22476102192441025,
+    "working_memory_pressure": 0.3199451923628921,
+    "retrieval_pressure": 0.8215588122987552,
+    "exploration_drive": 0.014960880807955552,
+    "exploitation_drive": 0.3636356048927601,
+    "uncertainty": 0.288,
+    "prediction_error": 0.3999999999999999,
+    "action_readiness": 0.1510673622085978,
+    "model_selection_preference": 0.319207204514961,
+    "tool_selection_preference": 0.09550465369277272,
+    "persistence_write_memory_pressure": 0.19494519236289207,
+    "recurrent": [
+      0.000513,
+      -1.7e-05,
+      -0.011143,
+      -0.042627,
+      0.000299,
+      -0.014961,
+      -0.057874,
+      0.194945,
+      0.006053,
+      0.443469,
+      0.113636,
+      0.621559,
+      0.121043,
+      0.077374,
+      0.466493,
+      0.0
+    ],
+    "step": 6
+  },
+  "controller_actions": [
+    {
+      "time": "2026-09-17T11:57:44.950862+00:00",
+      "event": "route",
+      "run_id": "mixed-05-101-real",
+      "step": 0,
+      "controller_state": {
+        "sensory_input_salience": 0.3125,
+        "integration_state": 0.13988233838817757,
+        "working_memory_pressure": 0.21564595713758228,
+        "retrieval_pressure": 0.30266930793709296,
+        "exploration_drive": 0.6467112991717978,
+        "exploitation_drive": 0.3491055674351606,
+        "uncertainty": 0.5,
+        "prediction_error": 0.0,
+        "action_readiness": 0.4142426683864875,
+        "model_selection_preference": 0.18511440421382216,
+        "tool_selection_preference": 0.39385428290997904,
+        "persistence_write_memory_pressure": 0.09064595713758229,
+        "recurrent": [
+          6.1e-05,
+          0.002818,
+          -0.007756,
+          -0.042738,
+          7.9e-05,
+          0.646711,
+          -0.010088,
+          0.090646,
+          0.000182,
+          -0.279583,
+          0.099106,
+          0.102669,
+          0.264734,
+          0.688603,
+          0.452883,
+          0.0
+        ],
+        "step": 2
+      },
+      "decision": "act",
+      "requested": "file_manipulation",
+      "provider": "mock",
+      "tool": null,
+      "top_capabilities": [
+        [
+          "research",
+          0.544013
+        ],
+        [
+          "file_manipulation",
+          0.474273
+        ],
+        [
+          "web_navigation",
+          0.194013
+        ],
+        [
+          "critique",
+          0.15
+        ],
+        [
+          "verification",
+          0.15
+        ]
+      ]
+    },
+    {
+      "time": "2026-09-17T11:57:49.941876+00:00",
+      "event": "route",
+      "run_id": "mixed-05-101-real",
+      "step": 0,
+      "controller_state": {
+        "sensory_input_salience": 0.3125,
+        "integration_state": 0.4560250864106977,
+        "working_memory_pressure": 0.24618610619046882,
+        "retrieval_pressure": 0.8217208106722016,
+        "exploration_drive": 0.004604269931670859,
+        "exploitation_drive": 0.3725672111524679,
+        "uncertainty": 0.5,
+        "prediction_error": 0.0,
+        "action_readiness": 0.27579461141858197,
+        "model_selection_preference": 0.3047677758874918,
+        "tool_selection_preference": 0.10906567378946702,
+        "persistence_write_memory_pressure": 0.12118610619046884,
+        "recurrent": [
+          -4.2e-05,
+          0.000387,
+          -0.014127,
+          -0.056744,
+          0.000285,
+          0.004604,
+          -0.003868,
+          0.121186,
+          0.423701,
+          0.488349,
+          0.122567,
+          0.621721,
+          0.133044,
+          0.095564,
+          0.477172,
+          0.0
+        ],
+        "step": 3
+      },
+      "decision": "continue",
+      "requested": "file_manipulation",
+      "provider": "mock",
+      "tool": null,
+      "top_capabilities": [
+        [
+          "verification",
+          0.5
+        ],
+        [
+          "mathematics",
+          0.486808
+        ],
+        [
+          "retrieval",
+          0.246516
+        ],
+        [
+          "memory_retrieval",
+          0.246516
+        ],
+        [
+          "critique",
+          0.15
+        ]
+      ]
+    },
+    {
+      "time": "2026-09-17T11:57:55.315006+00:00",
+      "event": "route",
+      "run_id": "mixed-05-101-real",
+      "step": 0,
+      "controller_state": {
+        "sensory_input_salience": 0.3125,
+        "integration_state": 0.20493499801002263,
+        "working_memory_pressure": 0.3216106252453447,
+        "retrieval_pressure": 0.8220856971586485,
+        "exploration_drive": 0.020739714973351777,
+        "exploitation_drive": 0.40836677687496914,
+        "uncertainty": 0.5,
+        "prediction_error": 0.0,
+        "action_readiness": 0.4440681574821769,
+        "model_selection_preference": 0.2988002164407303,
+        "tool_selection_preference": 0.42078404691465016,
+        "persistence_write_memory_pressure": 0.19661062524534467,
+        "recurrent": [
+          0.00046,
+          -0.005225,
+          -0.01649,
+          -0.057287,
+          0.000661,
+          -0.02074,
+          -0.071334,
+          0.196611,
+          0.00888,
+          0.40099,
+          0.158367,
+          0.622086,
+          0.110224,
+          0.683201,
+          0.479633,
+          0.0
+        ],
+        "step": 4
+      },
+      "decision": "act",
+      "requested": "file_manipulation",
+      "provider": "mock",
+      "tool": null,
+      "top_capabilities": [
+        [
+          "verification",
+          0.5
+        ],
+        [
+          "file_manipulation",
+          0.48322
+        ],
+        [
+          "retrieval",
+          0.246626
+        ],
+        [
+          "memory_retrieval",
+          0.246626
+        ],
+        [
+          "critique",
+          0.15
+        ]
+      ]
+    },
+    {
+      "time": "2026-09-17T11:58:08.360888+00:00",
+      "event": "route",
+      "run_id": "mixed-05-101-real",
+      "step": 0,
+      "controller_state": {
+        "sensory_input_salience": 0.1875,
+        "integration_state": 0.05602115713996294,
+        "working_memory_pressure": 0.33470919681418076,
+        "retrieval_pressure": 0.21135475507041973,
+        "exploration_drive": 0.010642895303677662,
+        "exploitation_drive": 0.3447804470289296,
+        "uncertainty": 0.5,
+        "prediction_error": 0.0,
+        "action_readiness": 0.3608522280443715,
+        "model_selection_preference": 0.159421866555653,
+        "tool_selection_preference": 0.38023187298885486,
+        "persistence_write_memory_pressure": 0.2097091968141808,
+        "recurrent": [
+          0.000743,
+          -0.000792,
+          -0.004998,
+          -0.01777,
+          0.000326,
+          -0.010643,
+          -0.088925,
+          0.209709,
+          0.002908,
+          -0.109135,
+          0.09478,
+          0.011355,
+          0.005491,
+          0.665683,
+          0.456848,
+          0.0
+        ],
+        "step": 5
+      },
+      "decision": "act",
+      "requested": "file_manipulation",
+      "provider": "mock",
+      "tool": null,
+      "top_capabilities": [
+        [
+          "file_manipulation",
+          0.458256
+        ],
+        [
+          "critique",
+          0.15
+        ],
+        [
+          "verification",
+          0.15
+        ],
+        [
+          "shell_execution",
+          0.11407
+        ],
+        [
+          "api_interaction",
+          0.11407
+        ]
+      ]
+    },
+    {
+      "time": "2026-09-17T11:58:14.900546+00:00",
+      "event": "route",
+      "run_id": "mixed-05-101-real",
+      "step": 0,
+      "controller_state": {
+        "sensory_input_salience": 0.1875,
+        "integration_state": 0.22476102192441025,
+        "working_memory_pressure": 0.3199451923628921,
+        "retrieval_pressure": 0.8215588122987552,
+        "exploration_drive": 0.014960880807955552,
+        "exploitation_drive": 0.3636356048927601,
+        "uncertainty": 0.5,
+        "prediction_error": 0.0,
+        "action_readiness": 0.1510673622085978,
+        "model_selection_preference": 0.319207204514961,
+        "tool_selection_preference": 0.09550465369277272,
+        "persistence_write_memory_pressure": 0.19494519236289207,
+        "recurrent": [
+          0.000513,
+          -1.7e-05,
+          -0.011143,
+          -0.042627,
+          0.000299,
+          -0.014961,
+          -0.057874,
+          0.194945,
+          0.006053,
+          0.443469,
+          0.113636,
+          0.621559,
+          0.121043,
+          0.077374,
+          0.466493,
+          0.0
+        ],
+        "step": 6
+      },
+      "decision": "continue",
+      "requested": "verification",
+      "provider": "mock",
+      "tool": null,
+      "top_capabilities": [
+        [
+          "verification",
+          0.5
+        ],
+        [
+          "retrieval",
+          0.246468
+        ],
+        [
+          "memory_retrieval",
+          0.246468
+        ],
+        [
+          "critique",
+          0.15
+        ],
+        [
+          "coding",
+          0.067428
+        ]
+      ]
+    }
+  ],
+  "final_output": "### Task Completion Status\n\n- **Task**: Verify chunks against [manifest.txt](file:///C:/Users/akshat/AppData/Local/Temp/flyos-benchmark-2fisq84c/workspace/manifest.txt), concatenate valid chunks in listed order, and write [result.txt](file:///C:/Users/akshat/AppData/Local/Temp/flyos-benchmark-2fisq84c/workspace/result.txt).\n- **Run ID**: `mixed-05-101-real`\n- **Validation**:\n  - `a.txt`: expected length `2`, actual length `2` (`AA`) -> **Valid**\n  - `b.txt`: expected length `3`, actual length `4` (`BAD!`) -> **Invalid**\n  - `c.txt`: expected length `2`, actual length `2` (`CC`) -> **Valid**\n- **Output**: [result.txt](file:///C:/Users/akshat/AppData/Local/Temp/flyos-benchmark-2fisq84c/workspace/result.txt) written with `AACC`.\n- **FlyOS Protocol**: Completed task creation, observations, routing, state verification via `fly_act`, and final trace retrieval via `fly_get_trace`.\n",
+  "grader_result": {
+    "success": true,
+    "checks": {
+      "result.txt": true
+    },
+    "type": "exact_files"
+  },
+  "agy_returncode": 0,
+  "agy_stderr": ""
+}

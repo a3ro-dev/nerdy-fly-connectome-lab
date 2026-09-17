@@ -1,0 +1,270 @@
+{
+  "run_id": "code-01-202-real",
+  "task_id": "code-01",
+  "category": "coding_debugging",
+  "condition": "real",
+  "seed": 202,
+  "agy_version": "1.2.5",
+  "model": "gemini-3.8-flash-low",
+  "effort": "low",
+  "git_commit": "7f87908549f0af9007f106ca1f4a69d681eeeac8",
+  "manifest_sha256": "04420dac4c59e6f595cf34d6bda99c3a2beb890b3f6a630cb7e1737283a7ade6",
+  "workspace_initial_sha256": "3ba74950685c6f12aceaf4667b20ce09c3359b7114d11bf14d5711663a92cb08",
+  "start_time": "2026-09-17T07:27:35.471358+00:00",
+  "end_time": "2026-09-17T07:28:43.459995+00:00",
+  "wall_clock_time": 67.9886439999973,
+  "success": true,
+  "failure_mode": null,
+  "infrastructure_failure": null,
+  "infrastructure_warning": null,
+  "tool_calls": 7,
+  "tool_errors": 0,
+  "steps": 1,
+  "model_calls": 1,
+  "input_tokens": 197862,
+  "output_tokens": 1893,
+  "estimated_cost": null,
+  "verification_result": true,
+  "memory_reads": 0,
+  "memory_writes": 0,
+  "controller_state_summary": {
+    "sensory_input_salience": 0.5625,
+    "integration_state": 0.40883447216398117,
+    "working_memory_pressure": 0.40174146781966524,
+    "retrieval_pressure": 1.0,
+    "exploration_drive": 0.03496927738049356,
+    "exploitation_drive": 1.0,
+    "uncertainty": 0.288,
+    "prediction_error": 0.3999999999999999,
+    "action_readiness": 0.2924104204704963,
+    "model_selection_preference": 0.5402666008025461,
+    "tool_selection_preference": 0.5382299490855958,
+    "persistence_write_memory_pressure": 0.27674146781966524,
+    "recurrent": [
+      0.00088,
+      -0.008693,
+      -0.032731,
+      -0.117781,
+      0.000913,
+      -0.034969,
+      -0.109777,
+      0.276741,
+      0.013877,
+      0.803792,
+      0.900474,
+      0.869208,
+      0.342438,
+      0.175986,
+      0.50255,
+      0.0
+    ],
+    "step": 4
+  },
+  "controller_actions": [
+    {
+      "time": "2026-09-17T07:28:07.796707+00:00",
+      "event": "route",
+      "run_id": "code-01-202-real",
+      "step": 0,
+      "controller_state": {
+        "sensory_input_salience": 0.5625,
+        "integration_state": 0.2620113271306478,
+        "working_memory_pressure": 0.296843231604648,
+        "retrieval_pressure": 0.8748496546530795,
+        "exploration_drive": 0.6372123577876412,
+        "exploitation_drive": 0.9678836855199562,
+        "uncertainty": 0.5,
+        "prediction_error": 0.0,
+        "action_readiness": 0.4950286190321703,
+        "model_selection_preference": 0.34277570333518786,
+        "tool_selection_preference": 0.7229647982268246,
+        "persistence_write_memory_pressure": 0.17184323160464798,
+        "recurrent": [
+          0.000467,
+          -0.006178,
+          -0.028995,
+          -0.116443,
+          0.000727,
+          0.637212,
+          -0.066486,
+          0.171843,
+          0.010314,
+          0.513708,
+          0.717884,
+          0.67485,
+          0.474912,
+          0.728046,
+          0.49144,
+          0.0
+        ],
+        "step": 2
+      },
+      "decision": "act",
+      "requested": "file_manipulation",
+      "provider": "mock",
+      "tool": null,
+      "top_capabilities": [
+        [
+          "retrieval",
+          0.612455
+        ],
+        [
+          "shell_execution",
+          0.566889
+        ],
+        [
+          "verification",
+          0.5
+        ],
+        [
+          "file_manipulation",
+          0.498509
+        ],
+        [
+          "memory_retrieval",
+          0.262455
+        ]
+      ]
+    },
+    {
+      "time": "2026-09-17T07:28:19.432736+00:00",
+      "event": "route",
+      "run_id": "code-01-202-real",
+      "step": 0,
+      "controller_state": {
+        "sensory_input_salience": 0.5625,
+        "integration_state": 0.5836917502442044,
+        "working_memory_pressure": 0.35638287307186023,
+        "retrieval_pressure": 0.7932996518403048,
+        "exploration_drive": 0.0219166723733893,
+        "exploitation_drive": 0.9518047947574939,
+        "uncertainty": 0.5,
+        "prediction_error": 0.0,
+        "action_readiness": 0.398062163402776,
+        "model_selection_preference": 0.4850425260798564,
+        "tool_selection_preference": 0.4571186856594207,
+        "persistence_write_memory_pressure": 0.2313828730718602,
+        "recurrent": [
+          0.000638,
+          -0.006956,
+          -0.037227,
+          -0.153587,
+          0.000795,
+          -0.021917,
+          -0.087093,
+          0.231383,
+          0.428681,
+          0.738702,
+          0.701805,
+          0.5933,
+          0.646626,
+          0.212433,
+          0.500343,
+          0.0
+        ],
+        "step": 3
+      },
+      "decision": "act",
+      "requested": "file_manipulation",
+      "provider": "mock",
+      "tool": null,
+      "top_capabilities": [
+        [
+          "debugging",
+          0.525108
+        ],
+        [
+          "mathematics",
+          0.525108
+        ],
+        [
+          "verification",
+          0.5
+        ],
+        [
+          "shell_execution",
+          0.487136
+        ],
+        [
+          "retrieval",
+          0.23799
+        ]
+      ]
+    },
+    {
+      "time": "2026-09-17T07:28:29.418097+00:00",
+      "event": "route",
+      "run_id": "code-01-202-real",
+      "step": 0,
+      "controller_state": {
+        "sensory_input_salience": 0.5625,
+        "integration_state": 0.40883447216398117,
+        "working_memory_pressure": 0.40174146781966524,
+        "retrieval_pressure": 1.0,
+        "exploration_drive": 0.03496927738049356,
+        "exploitation_drive": 1.0,
+        "uncertainty": 0.5,
+        "prediction_error": 0.0,
+        "action_readiness": 0.2924104204704963,
+        "model_selection_preference": 0.5402666008025461,
+        "tool_selection_preference": 0.5382299490855958,
+        "persistence_write_memory_pressure": 0.27674146781966524,
+        "recurrent": [
+          0.00088,
+          -0.008693,
+          -0.032731,
+          -0.117781,
+          0.000913,
+          -0.034969,
+          -0.109777,
+          0.276741,
+          0.013877,
+          0.803792,
+          0.900474,
+          0.869208,
+          0.342438,
+          0.175986,
+          0.50255,
+          0.0
+        ],
+        "step": 4
+      },
+      "decision": "continue",
+      "requested": "verification",
+      "provider": "mock",
+      "tool": null,
+      "top_capabilities": [
+        [
+          "shell_execution",
+          0.861469
+        ],
+        [
+          "verification",
+          0.85
+        ],
+        [
+          "retrieval",
+          0.3
+        ],
+        [
+          "memory_retrieval",
+          0.3
+        ],
+        [
+          "api_interaction",
+          0.161469
+        ]
+      ]
+    }
+  ],
+  "final_output": "### Task Completion Summary\n\n- **Task**: Fix [solution.py](file:///C:/Users/akshat/AppData/Local/Temp/flyos-benchmark-19nqkn8p/workspace/solution.py) so all local tests pass while keeping the public API unchanged.\n- **Run ID**: `code-01-202-real`\n- **Actions Taken**:\n  - Initialized task `code-01-202-real` via `fly_create_task` with budget 30.\n  - Inspected [test_solution.py](file:///C:/Users/akshat/AppData/Local/Temp/flyos-benchmark-19nqkn8p/workspace/test_solution.py) and [solution.py](file:///C:/Users/akshat/AppData/Local/Temp/flyos-benchmark-19nqkn8p/workspace/solution.py) following `fly_observe` and `fly_route` protocols.\n  - Corrected [`total`](file:///C:/Users/akshat/AppData/Local/Temp/flyos-benchmark-19nqkn8p/workspace/solution.py#L1-L2) in [solution.py](file:///C:/Users/akshat/AppData/Local/Temp/flyos-benchmark-19nqkn8p/workspace/solution.py) from `return sum(values) + 1` to `return sum(values)`.\n  - Executed safe verification through `fly_act` with `verification_type='unittest'` and `state_changed=true`.\n  - Confirmed verification success (`verified: true`, `status: stop`).\n  - Retrieved final auditable events using `fly_get_trace`.\n",
+  "grader_result": {
+    "success": true,
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "----------------------------------------------------------------------\nRan 2 tests in 0.000s\n\nOK\n",
+    "type": "command"
+  },
+  "agy_returncode": 0,
+  "agy_stderr": ""
+}

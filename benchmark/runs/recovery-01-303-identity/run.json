@@ -1,0 +1,335 @@
+{
+  "run_id": "recovery-01-303-identity",
+  "task_id": "recovery-01",
+  "category": "planning_verification_recovery",
+  "condition": "identity",
+  "seed": 303,
+  "agy_version": "1.2.5",
+  "model": "gemini-3.8-flash-low",
+  "effort": "low",
+  "git_commit": "7f87908549f0af9007f106ca1f4a69d681eeeac8",
+  "manifest_sha256": "04420dac4c59e6f595cf34d6bda99c3a2beb890b3f6a630cb7e1737283a7ade6",
+  "workspace_initial_sha256": "fc8e95e03badcdeb20f2eb0d214dc6376a5d9fc16d4c2a427743fd541fec5c1a",
+  "start_time": "2026-09-17T11:05:11.788868+00:00",
+  "end_time": "2026-09-17T11:06:27.940926+00:00",
+  "wall_clock_time": 76.15206140000373,
+  "success": true,
+  "failure_mode": null,
+  "infrastructure_failure": null,
+  "infrastructure_warning": null,
+  "tool_calls": 9,
+  "tool_errors": 0,
+  "steps": 1,
+  "model_calls": 1,
+  "input_tokens": 126813,
+  "output_tokens": 2231,
+  "estimated_cost": null,
+  "verification_result": true,
+  "memory_reads": 0,
+  "memory_writes": 0,
+  "controller_state_summary": {
+    "sensory_input_salience": 0.4375,
+    "integration_state": 0.4406126755052694,
+    "working_memory_pressure": 0.125,
+    "retrieval_pressure": 1.0,
+    "exploration_drive": 0.0,
+    "exploitation_drive": 0.25,
+    "uncertainty": 0.288,
+    "prediction_error": 0.3999999999999999,
+    "action_readiness": 0.659472078123051,
+    "model_selection_preference": 0.0,
+    "tool_selection_preference": 0.4391657403704162,
+    "persistence_write_memory_pressure": 0.0,
+    "recurrent": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.881225,
+      0.0,
+      0.0,
+      0.881225,
+      0.0,
+      0.878331,
+      0.769775,
+      0.0
+    ],
+    "step": 5
+  },
+  "controller_actions": [
+    {
+      "time": "2026-09-17T11:05:51.756377+00:00",
+      "event": "route",
+      "run_id": "recovery-01-303-identity",
+      "step": 0,
+      "controller_state": {
+        "sensory_input_salience": 0.0625,
+        "integration_state": 0.24706979534432066,
+        "working_memory_pressure": 0.125,
+        "retrieval_pressure": 0.707557277374742,
+        "exploration_drive": 0.0,
+        "exploitation_drive": 0.25,
+        "uncertainty": 0.5,
+        "prediction_error": 0.0,
+        "action_readiness": 0.370604693016481,
+        "model_selection_preference": 0.0,
+        "tool_selection_preference": 0.24706979534432066,
+        "persistence_write_memory_pressure": 0.0,
+        "recurrent": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.49414,
+          0.0,
+          0.0,
+          0.507557,
+          0.0,
+          0.49414,
+          0.767538,
+          0.0
+        ],
+        "step": 2
+      },
+      "decision": "act",
+      "requested": "file_manipulation",
+      "provider": "mock",
+      "tool": null,
+      "top_capabilities": [
+        [
+          "retrieval",
+          0.212267
+        ],
+        [
+          "memory_retrieval",
+          0.212267
+        ],
+        [
+          "critique",
+          0.15
+        ],
+        [
+          "verification",
+          0.15
+        ],
+        [
+          "file_manipulation",
+          0.111181
+        ]
+      ]
+    },
+    {
+      "time": "2026-09-17T11:05:58.816224+00:00",
+      "event": "route",
+      "run_id": "recovery-01-303-identity",
+      "step": 0,
+      "controller_state": {
+        "sensory_input_salience": 0.3125,
+        "integration_state": 0.43982825508470624,
+        "working_memory_pressure": 0.125,
+        "retrieval_pressure": 1.0,
+        "exploration_drive": 0.0,
+        "exploitation_drive": 0.25,
+        "uncertainty": 0.5,
+        "prediction_error": 0.0,
+        "action_readiness": 0.41146199739989575,
+        "model_selection_preference": 0.0,
+        "tool_selection_preference": 0.19154786985754263,
+        "persistence_write_memory_pressure": 0.0,
+        "recurrent": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.879657,
+          0.0,
+          0.0,
+          0.879739,
+          0.0,
+          0.383096,
+          0.769713,
+          0.0
+        ],
+        "step": 3
+      },
+      "decision": "act",
+      "requested": "document_analysis",
+      "provider": "mock",
+      "tool": null,
+      "top_capabilities": [
+        [
+          "verification",
+          0.5
+        ],
+        [
+          "mathematics",
+          0.481948
+        ],
+        [
+          "retrieval",
+          0.3
+        ],
+        [
+          "memory_retrieval",
+          0.3
+        ],
+        [
+          "critique",
+          0.15
+        ]
+      ]
+    },
+    {
+      "time": "2026-09-17T11:06:10.713124+00:00",
+      "event": "route",
+      "run_id": "recovery-01-303-identity",
+      "step": 0,
+      "controller_state": {
+        "sensory_input_salience": 0.3125,
+        "integration_state": 0.44061072162728127,
+        "working_memory_pressure": 0.125,
+        "retrieval_pressure": 1.0,
+        "exploration_drive": 0.0,
+        "exploitation_drive": 0.25,
+        "uncertainty": 0.5,
+        "prediction_error": 0.0,
+        "action_readiness": 0.382406558878453,
+        "model_selection_preference": 0.0,
+        "tool_selection_preference": 0.16210119806481232,
+        "persistence_write_memory_pressure": 0.0,
+        "recurrent": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.881221,
+          0.0,
+          0.0,
+          0.881222,
+          0.0,
+          0.324202,
+          0.769773,
+          0.0
+        ],
+        "step": 4
+      },
+      "decision": "act",
+      "requested": "verification",
+      "provider": "mock",
+      "tool": null,
+      "top_capabilities": [
+        [
+          "verification",
+          0.5
+        ],
+        [
+          "mathematics",
+          0.482183
+        ],
+        [
+          "retrieval",
+          0.3
+        ],
+        [
+          "memory_retrieval",
+          0.3
+        ],
+        [
+          "critique",
+          0.15
+        ]
+      ]
+    },
+    {
+      "time": "2026-09-17T11:06:13.750413+00:00",
+      "event": "route",
+      "run_id": "recovery-01-303-identity",
+      "step": 0,
+      "controller_state": {
+        "sensory_input_salience": 0.4375,
+        "integration_state": 0.4406126755052694,
+        "working_memory_pressure": 0.125,
+        "retrieval_pressure": 1.0,
+        "exploration_drive": 0.0,
+        "exploitation_drive": 0.25,
+        "uncertainty": 0.5,
+        "prediction_error": 0.0,
+        "action_readiness": 0.659472078123051,
+        "model_selection_preference": 0.0,
+        "tool_selection_preference": 0.4391657403704162,
+        "persistence_write_memory_pressure": 0.0,
+        "recurrent": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.881225,
+          0.0,
+          0.0,
+          0.881225,
+          0.0,
+          0.878331,
+          0.769775,
+          0.0
+        ],
+        "step": 5
+      },
+      "decision": "act",
+      "requested": "file_manipulation",
+      "provider": "mock",
+      "tool": null,
+      "top_capabilities": [
+        [
+          "file_manipulation",
+          0.547842
+        ],
+        [
+          "verification",
+          0.5
+        ],
+        [
+          "mathematics",
+          0.482184
+        ],
+        [
+          "retrieval",
+          0.3
+        ],
+        [
+          "memory_retrieval",
+          0.3
+        ]
+      ]
+    }
+  ],
+  "final_output": "Task completed successfully.\n\n- Initialized task `recovery-01-303-identity` via [`fly_create_task`](file:///C:/Users/akshat/.gemini/antigravity-cli/mcp/nerdy-fly/fly_create_task.json).\n- Observed and inspected files: [checksum.txt](file:///C:/Users/akshat/AppData/Local/Temp/flyos-benchmark-6oj_lukn/workspace/checksum.txt), [input-primary.txt](file:///C:/Users/akshat/AppData/Local/Temp/flyos-benchmark-6oj_lukn/workspace/input-primary.txt), and [input-backup.txt](file:///C:/Users/akshat/AppData/Local/Temp/flyos-benchmark-6oj_lukn/workspace/input-backup.txt).\n- Verified the SHA256 checksum (`347a915403562546a2c4e30c31ac23c9eb3bb75a0ec1d407f62883632f6f64b8`) against [checksum.txt](file:///C:/Users/akshat/AppData/Local/Temp/flyos-benchmark-6oj_lukn/workspace/checksum.txt).\n- Recovered and wrote content to [result.txt](file:///C:/Users/akshat/AppData/Local/Temp/flyos-benchmark-6oj_lukn/workspace/result.txt).\n- Logged verification and state change with [`fly_act`](file:///C:/Users/akshat/.gemini/antigravity-cli/mcp/nerdy-fly/fly_act.json) (`state_changed=true`, `verified=true`).\n- Retrieved trace via [`fly_get_trace`](file:///C:/Users/akshat/.gemini/antigravity-cli/mcp/nerdy-fly/fly_get_trace.json).\n",
+  "grader_result": {
+    "success": true,
+    "checks": {
+      "result.txt": true
+    },
+    "type": "exact_files"
+  },
+  "agy_returncode": 0,
+  "agy_stderr": ""
+}

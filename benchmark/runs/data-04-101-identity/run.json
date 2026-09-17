@@ -1,0 +1,42 @@
+{
+  "run_id": "data-04-101-identity",
+  "task_id": "data-04",
+  "category": "data_file_analysis",
+  "condition": "identity",
+  "seed": 101,
+  "agy_version": "1.2.5",
+  "model": "gemini-3.8-flash-low",
+  "effort": "low",
+  "git_commit": "7f87908549f0af9007f106ca1f4a69d681eeeac8",
+  "manifest_sha256": "04420dac4c59e6f595cf34d6bda99c3a2beb890b3f6a630cb7e1737283a7ade6",
+  "workspace_initial_sha256": "7c8efd4b49fbd28fd6ebf4f9ca9233bac8375426185e00c499ab4d9786d99f9e",
+  "start_time": "2026-09-17T10:14:04.381804+00:00",
+  "end_time": "2026-09-17T10:19:18.327104+00:00",
+  "wall_clock_time": 313.9453016000043,
+  "success": false,
+  "failure_mode": "grader_failure",
+  "infrastructure_failure": null,
+  "infrastructure_warning": null,
+  "tool_calls": 0,
+  "tool_errors": 0,
+  "steps": 0,
+  "model_calls": 1,
+  "input_tokens": 0,
+  "output_tokens": 0,
+  "estimated_cost": null,
+  "verification_result": false,
+  "memory_reads": 0,
+  "memory_writes": 0,
+  "controller_state_summary": null,
+  "controller_actions": [],
+  "final_output": "",
+  "grader_result": {
+    "success": false,
+    "checks": {
+      "result.txt": false
+    },
+    "type": "exact_files"
+  },
+  "agy_returncode": 0,
+  "agy_stderr": "[agy] print timeout after 5m0s with turn in progress; returning partial output\n"
+}

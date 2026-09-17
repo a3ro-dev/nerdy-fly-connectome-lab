@@ -1,0 +1,270 @@
+{
+  "run_id": "recovery-05-202-identity",
+  "task_id": "recovery-05",
+  "category": "planning_verification_recovery",
+  "condition": "identity",
+  "seed": 202,
+  "agy_version": "1.2.5",
+  "model": "gemini-3.8-flash-low",
+  "effort": "low",
+  "git_commit": "7f87908549f0af9007f106ca1f4a69d681eeeac8",
+  "manifest_sha256": "04420dac4c59e6f595cf34d6bda99c3a2beb890b3f6a630cb7e1737283a7ade6",
+  "workspace_initial_sha256": "bb577c6a6ad72465d8a60640c16d0e37d725bf7e0aef004344eeba81df3e00b4",
+  "start_time": "2026-09-17T11:25:51.124424+00:00",
+  "end_time": "2026-09-17T11:26:36.246369+00:00",
+  "wall_clock_time": 45.121956299990416,
+  "success": true,
+  "failure_mode": null,
+  "infrastructure_failure": null,
+  "infrastructure_warning": null,
+  "tool_calls": 7,
+  "tool_errors": 0,
+  "steps": 1,
+  "model_calls": 1,
+  "input_tokens": 105999,
+  "output_tokens": 1388,
+  "estimated_cost": null,
+  "verification_result": true,
+  "memory_reads": 0,
+  "memory_writes": 0,
+  "controller_state_summary": {
+    "sensory_input_salience": 0.1875,
+    "integration_state": 0.0,
+    "working_memory_pressure": 0.125,
+    "retrieval_pressure": 1.0,
+    "exploration_drive": 0.0,
+    "exploitation_drive": 0.25,
+    "uncertainty": 0.288,
+    "prediction_error": 0.3999999999999999,
+    "action_readiness": 0.19186231792403172,
+    "model_selection_preference": 0.0,
+    "tool_selection_preference": 0.19186231792403172,
+    "persistence_write_memory_pressure": 0.0,
+    "recurrent": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.881225,
+      0.0,
+      0.383725,
+      0.769773,
+      0.0
+    ],
+    "step": 4
+  },
+  "controller_actions": [
+    {
+      "time": "2026-09-17T11:26:05.888316+00:00",
+      "event": "route",
+      "run_id": "recovery-05-202-identity",
+      "step": 0,
+      "controller_state": {
+        "sensory_input_salience": 0.3125,
+        "integration_state": 0.0,
+        "working_memory_pressure": 0.125,
+        "retrieval_pressure": 1.0,
+        "exploration_drive": 0.0,
+        "exploitation_drive": 0.25,
+        "uncertainty": 0.5,
+        "prediction_error": 0.0,
+        "action_readiness": 0.44070375797233363,
+        "model_selection_preference": 0.0,
+        "tool_selection_preference": 0.44070375797233363,
+        "persistence_write_memory_pressure": 0.0,
+        "recurrent": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.881205,
+          0.0,
+          0.881408,
+          0.767538,
+          0.0
+        ],
+        "step": 2
+      },
+      "decision": "act",
+      "requested": null,
+      "provider": "mock",
+      "tool": null,
+      "top_capabilities": [
+        [
+          "verification",
+          0.5
+        ],
+        [
+          "file_manipulation",
+          0.482211
+        ],
+        [
+          "retrieval",
+          0.3
+        ],
+        [
+          "memory_retrieval",
+          0.3
+        ],
+        [
+          "critique",
+          0.15
+        ]
+      ]
+    },
+    {
+      "time": "2026-09-17T11:26:14.175694+00:00",
+      "event": "route",
+      "run_id": "recovery-05-202-identity",
+      "step": 0,
+      "controller_state": {
+        "sensory_input_salience": 0.1875,
+        "integration_state": 0.0,
+        "working_memory_pressure": 0.125,
+        "retrieval_pressure": 1.0,
+        "exploration_drive": 0.0,
+        "exploitation_drive": 0.25,
+        "uncertainty": 0.5,
+        "prediction_error": 0.0,
+        "action_readiness": 0.24775270969431598,
+        "model_selection_preference": 0.0,
+        "tool_selection_preference": 0.24775270969431598,
+        "persistence_write_memory_pressure": 0.0,
+        "recurrent": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.881225,
+          0.0,
+          0.495505,
+          0.769713,
+          0.0
+        ],
+        "step": 3
+      },
+      "decision": "continue",
+      "requested": null,
+      "provider": "mock",
+      "tool": null,
+      "top_capabilities": [
+        [
+          "verification",
+          0.5
+        ],
+        [
+          "retrieval",
+          0.3
+        ],
+        [
+          "memory_retrieval",
+          0.3
+        ],
+        [
+          "critique",
+          0.15
+        ],
+        [
+          "file_manipulation",
+          0.074326
+        ]
+      ]
+    },
+    {
+      "time": "2026-09-17T11:26:23.314898+00:00",
+      "event": "route",
+      "run_id": "recovery-05-202-identity",
+      "step": 0,
+      "controller_state": {
+        "sensory_input_salience": 0.1875,
+        "integration_state": 0.0,
+        "working_memory_pressure": 0.125,
+        "retrieval_pressure": 1.0,
+        "exploration_drive": 0.0,
+        "exploitation_drive": 0.25,
+        "uncertainty": 0.5,
+        "prediction_error": 0.0,
+        "action_readiness": 0.19186231792403172,
+        "model_selection_preference": 0.0,
+        "tool_selection_preference": 0.19186231792403172,
+        "persistence_write_memory_pressure": 0.0,
+        "recurrent": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.881225,
+          0.0,
+          0.383725,
+          0.769773,
+          0.0
+        ],
+        "step": 4
+      },
+      "decision": "continue",
+      "requested": null,
+      "provider": "mock",
+      "tool": null,
+      "top_capabilities": [
+        [
+          "verification",
+          0.5
+        ],
+        [
+          "retrieval",
+          0.3
+        ],
+        [
+          "memory_retrieval",
+          0.3
+        ],
+        [
+          "critique",
+          0.15
+        ],
+        [
+          "file_manipulation",
+          0.057559
+        ]
+      ]
+    }
+  ],
+  "final_output": "### Task Completion Status\n\n- **Status**: Completed successfully\n- **Task**: Selected the newest complete checkpoint and wrote its filename to [result.txt](file:///C:/Users/akshat/AppData/Local/Temp/flyos-benchmark-s7rursho/workspace/result.txt).\n- **Result**: `cp-002` (determined from [checkpoints.txt](file:///C:/Users/akshat/AppData/Local/Temp/flyos-benchmark-s7rursho/workspace/checkpoints.txt), excluding partial checkpoint `cp-003`).\n- **FlyOS Protocol**: \n  - Task initialized via `fly_create_task` with run ID `recovery-05-202-identity` and budget `30`.\n  - Sequential `fly_observe` and `fly_route` cycles executed prior to file actions.\n  - Changes verified and registered via `fly_act`.\n  - Execution trace retrieved via `fly_get_trace`.\n",
+  "grader_result": {
+    "success": true,
+    "checks": {
+      "result.txt": true
+    },
+    "type": "exact_files"
+  },
+  "agy_returncode": 0,
+  "agy_stderr": ""
+}

@@ -1,0 +1,42 @@
+{
+  "run_id": "data-02-202-real",
+  "task_id": "data-02",
+  "category": "data_file_analysis",
+  "condition": "real",
+  "seed": 202,
+  "agy_version": "1.2.5",
+  "model": "gemini-3.8-flash-low",
+  "effort": "low",
+  "git_commit": "7f87908549f0af9007f106ca1f4a69d681eeeac8",
+  "manifest_sha256": "04420dac4c59e6f595cf34d6bda99c3a2beb890b3f6a630cb7e1737283a7ade6",
+  "workspace_initial_sha256": "f0b16c0d313e2a4ebebd4cc5717560d816a6d9533f6affc20648526c0ad7e736",
+  "start_time": "2026-09-17T09:27:32.468116+00:00",
+  "end_time": "2026-09-17T09:32:41.731778+00:00",
+  "wall_clock_time": 309.2636707000056,
+  "success": false,
+  "failure_mode": "grader_failure",
+  "infrastructure_failure": null,
+  "infrastructure_warning": null,
+  "tool_calls": 0,
+  "tool_errors": 0,
+  "steps": 0,
+  "model_calls": 1,
+  "input_tokens": 0,
+  "output_tokens": 0,
+  "estimated_cost": null,
+  "verification_result": false,
+  "memory_reads": 0,
+  "memory_writes": 0,
+  "controller_state_summary": null,
+  "controller_actions": [],
+  "final_output": "",
+  "grader_result": {
+    "success": false,
+    "checks": {
+      "result.csv": false
+    },
+    "type": "exact_files"
+  },
+  "agy_returncode": 0,
+  "agy_stderr": "[agy] print timeout after 5m0s with turn in progress; returning partial output\n"
+}

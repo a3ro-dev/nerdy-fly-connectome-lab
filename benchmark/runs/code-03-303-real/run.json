@@ -1,0 +1,335 @@
+{
+  "run_id": "code-03-303-real",
+  "task_id": "code-03",
+  "category": "coding_debugging",
+  "condition": "real",
+  "seed": 303,
+  "agy_version": "1.2.5",
+  "model": "gemini-3.8-flash-low",
+  "effort": "low",
+  "git_commit": "7f87908549f0af9007f106ca1f4a69d681eeeac8",
+  "manifest_sha256": "04420dac4c59e6f595cf34d6bda99c3a2beb890b3f6a630cb7e1737283a7ade6",
+  "workspace_initial_sha256": "ccae69c363ecc99def1c3e92012c44fd5af11ca7f75323dae9b69488f7b887cf",
+  "start_time": "2026-09-17T07:44:03.126345+00:00",
+  "end_time": "2026-09-17T07:45:09.498228+00:00",
+  "wall_clock_time": 66.37188669999887,
+  "success": true,
+  "failure_mode": null,
+  "infrastructure_failure": null,
+  "infrastructure_warning": null,
+  "tool_calls": 9,
+  "tool_errors": 0,
+  "steps": 1,
+  "model_calls": 1,
+  "input_tokens": 196661,
+  "output_tokens": 1623,
+  "estimated_cost": null,
+  "verification_result": true,
+  "memory_reads": 0,
+  "memory_writes": 0,
+  "controller_state_summary": {
+    "sensory_input_salience": 0.3125,
+    "integration_state": 0.40933387935811383,
+    "working_memory_pressure": 0.41844482528854077,
+    "retrieval_pressure": 0.8288035224931192,
+    "exploration_drive": 0.02290615258740689,
+    "exploitation_drive": 0.9549253465550606,
+    "uncertainty": 0.288,
+    "prediction_error": 0.3999999999999999,
+    "action_readiness": 0.26344037795107034,
+    "model_selection_preference": 0.5493596546879425,
+    "tool_selection_preference": 0.4112361115495437,
+    "persistence_write_memory_pressure": 0.29344482528854077,
+    "recurrent": [
+      -0.003142,
+      -0.008419,
+      -0.022648,
+      -0.081434,
+      0.000891,
+      -0.022906,
+      0.239633,
+      0.293445,
+      0.013393,
+      0.805274,
+      0.704925,
+      0.628804,
+      0.27311,
+      0.117547,
+      0.500804,
+      0.0
+    ],
+    "step": 5
+  },
+  "controller_actions": [
+    {
+      "time": "2026-09-17T07:44:35.296976+00:00",
+      "event": "route",
+      "run_id": "code-03-303-real",
+      "step": 0,
+      "controller_state": {
+        "sensory_input_salience": 0.9375,
+        "integration_state": 0.273671546944615,
+        "working_memory_pressure": 0.3082315741006453,
+        "retrieval_pressure": 0.8478028448656199,
+        "exploration_drive": 0.6301758718596742,
+        "exploitation_drive": 0.9717392599003433,
+        "uncertainty": 0.5,
+        "prediction_error": 0.0,
+        "action_readiness": 0.5922348304496723,
+        "model_selection_preference": 0.35990822485187185,
+        "tool_selection_preference": 0.8162686869275364,
+        "persistence_write_memory_pressure": 0.18323157410064528,
+        "recurrent": [
+          -0.006987,
+          -0.006563,
+          -0.038261,
+          -0.163086,
+          0.000761,
+          0.630176,
+          0.827486,
+          0.183232,
+          0.010758,
+          0.536585,
+          0.721739,
+          0.647803,
+          0.761026,
+          0.910798,
+          0.508457,
+          0.0
+        ],
+        "step": 2
+      },
+      "decision": "act",
+      "requested": "file_manipulation",
+      "provider": "mock",
+      "tool": null,
+      "top_capabilities": [
+        [
+          "file_manipulation",
+          0.87767
+        ],
+        [
+          "retrieval",
+          0.604341
+        ],
+        [
+          "shell_execution",
+          0.594881
+        ],
+        [
+          "verification",
+          0.5
+        ],
+        [
+          "coding",
+          0.432101
+        ]
+      ]
+    },
+    {
+      "time": "2026-09-17T07:44:44.027608+00:00",
+      "event": "route",
+      "run_id": "code-03-303-real",
+      "step": 0,
+      "controller_state": {
+        "sensory_input_salience": 0.3125,
+        "integration_state": 0.3821587982564765,
+        "working_memory_pressure": 0.36599912331732676,
+        "retrieval_pressure": 0.8277670437031521,
+        "exploration_drive": 0.007994007349851524,
+        "exploitation_drive": 0.9586107631009437,
+        "uncertainty": 0.5,
+        "prediction_error": 0.0,
+        "action_readiness": 0.27791908017237776,
+        "model_selection_preference": 0.49645909143001216,
+        "tool_selection_preference": 0.4411450625946114,
+        "persistence_write_memory_pressure": 0.24099912331732676,
+        "recurrent": [
+          -0.00337,
+          -0.007067,
+          -0.02846,
+          -0.104473,
+          0.000806,
+          -0.007994,
+          0.263908,
+          0.240999,
+          0.012399,
+          0.751919,
+          0.708611,
+          0.627767,
+          0.272372,
+          0.173679,
+          0.502011,
+          0.0
+        ],
+        "step": 3
+      },
+      "decision": "continue",
+      "requested": "file_manipulation",
+      "provider": "mock",
+      "tool": null,
+      "top_capabilities": [
+        [
+          "verification",
+          0.5
+        ],
+        [
+          "shell_execution",
+          0.482344
+        ],
+        [
+          "retrieval",
+          0.24833
+        ],
+        [
+          "memory_retrieval",
+          0.24833
+        ],
+        [
+          "critique",
+          0.15
+        ]
+      ]
+    },
+    {
+      "time": "2026-09-17T07:44:56.106746+00:00",
+      "event": "route",
+      "run_id": "code-03-303-real",
+      "step": 0,
+      "controller_state": {
+        "sensory_input_salience": 0.3125,
+        "integration_state": 0.34278545345910466,
+        "working_memory_pressure": 0.4024489110074705,
+        "retrieval_pressure": 0.29280495762280523,
+        "exploration_drive": 0.02536210754555182,
+        "exploitation_drive": 0.3367449115774944,
+        "uncertainty": 0.5,
+        "prediction_error": 0.0,
+        "action_readiness": 0.2173503959553141,
+        "model_selection_preference": 0.47599220300878986,
+        "tool_selection_preference": 0.089330125014509,
+        "persistence_write_memory_pressure": 0.2774489110074705,
+        "recurrent": [
+          -0.006452,
+          -0.007939,
+          -0.023042,
+          -0.095558,
+          0.000851,
+          -0.025362,
+          0.811287,
+          0.277449,
+          0.011035,
+          0.674535,
+          0.086745,
+          -0.092805,
+          0.454023,
+          0.091915,
+          0.487377,
+          0.0
+        ],
+        "step": 4
+      },
+      "decision": "continue",
+      "requested": "coding",
+      "provider": "mock",
+      "tool": null,
+      "top_capabilities": [
+        [
+          "coding",
+          0.452836
+        ],
+        [
+          "data_analysis",
+          0.452836
+        ],
+        [
+          "critique",
+          0.15
+        ],
+        [
+          "verification",
+          0.15
+        ],
+        [
+          "debugging",
+          0.102836
+        ]
+      ]
+    },
+    {
+      "time": "2026-09-17T07:45:02.701136+00:00",
+      "event": "route",
+      "run_id": "code-03-303-real",
+      "step": 0,
+      "controller_state": {
+        "sensory_input_salience": 0.3125,
+        "integration_state": 0.40933387935811383,
+        "working_memory_pressure": 0.41844482528854077,
+        "retrieval_pressure": 0.8288035224931192,
+        "exploration_drive": 0.02290615258740689,
+        "exploitation_drive": 0.9549253465550606,
+        "uncertainty": 0.5,
+        "prediction_error": 0.0,
+        "action_readiness": 0.26344037795107034,
+        "model_selection_preference": 0.5493596546879425,
+        "tool_selection_preference": 0.4112361115495437,
+        "persistence_write_memory_pressure": 0.29344482528854077,
+        "recurrent": [
+          -0.003142,
+          -0.008419,
+          -0.022648,
+          -0.081434,
+          0.000891,
+          -0.022906,
+          0.239633,
+          0.293445,
+          0.013393,
+          0.805274,
+          0.704925,
+          0.628804,
+          0.27311,
+          0.117547,
+          0.500804,
+          0.0
+        ],
+        "step": 5
+      },
+      "decision": "continue",
+      "requested": "verification",
+      "provider": "mock",
+      "tool": null,
+      "top_capabilities": [
+        [
+          "verification",
+          0.5
+        ],
+        [
+          "shell_execution",
+          0.473371
+        ],
+        [
+          "retrieval",
+          0.248641
+        ],
+        [
+          "memory_retrieval",
+          0.248641
+        ],
+        [
+          "critique",
+          0.15
+        ]
+      ]
+    }
+  ],
+  "final_output": "### Task Completion Status: Success\n\n- **Task**: Debug `stable_unique` without sorting the input; make tests pass.\n- **Run ID**: `code-03-303-real`\n- **Resolution**: Updated [`solution.py`](file:///C:/Users/akshat/AppData/Local/Temp/flyos-benchmark-xhsm4ln3/workspace/solution.py) to preserve insertion order using a `seen` set and sequential list accumulation without sorting the input.\n- **Verification**: Verified successfully via `fly_act` with `verification_type='unittest'`, achieving `verified=true` and passing the test suite. Trace retrieved.\n",
+  "grader_result": {
+    "success": true,
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "----------------------------------------------------------------------\nRan 1 test in 0.000s\n\nOK\n",
+    "type": "command"
+  },
+  "agy_returncode": 0,
+  "agy_stderr": ""
+}

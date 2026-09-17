@@ -1,0 +1,106 @@
+{
+  "manifest_sha256": "04420dac4c59e6f595cf34d6bda99c3a2beb890b3f6a630cb7e1737283a7ade6",
+  "conditions": {
+    "identity": {
+      "n": 90,
+      "successes": 65,
+      "success_rate": 0.7222222222222222,
+      "mean_wall_clock_time": 89.35233104666646,
+      "mean_tool_calls": 6.733333333333333,
+      "verification_rate": 0.7222222222222222,
+      "input_tokens": 12999741,
+      "output_tokens": 145385
+    },
+    "real": {
+      "n": 90,
+      "successes": 65,
+      "success_rate": 0.7222222222222222,
+      "mean_wall_clock_time": 87.95024422222228,
+      "mean_tool_calls": 6.955555555555556,
+      "verification_rate": 0.7222222222222222,
+      "input_tokens": 13291102,
+      "output_tokens": 150479
+    },
+    "shuffled": {
+      "status": "not run"
+    },
+    "rewired": {
+      "status": "not run"
+    }
+  },
+  "paired": {
+    "paired_success_difference": 0.0,
+    "paired_success_bootstrap_95ci": [
+      -0.03333333333333333,
+      0.03333333333333333
+    ],
+    "mcnemar_exact_p": 1.0,
+    "paired_time_difference_mean": -1.4020868244441873,
+    "paired_time_bootstrap_95ci": [
+      -7.726793848888499,
+      3.4804686566661984
+    ]
+  },
+  "per_category": {
+    "coding_debugging": {
+      "identity": {
+        "n": 15,
+        "success_rate": 1.0
+      },
+      "real": {
+        "n": 15,
+        "success_rate": 1.0
+      }
+    },
+    "data_file_analysis": {
+      "identity": {
+        "n": 15,
+        "success_rate": 0.4666666666666667
+      },
+      "real": {
+        "n": 15,
+        "success_rate": 0.4666666666666667
+      }
+    },
+    "mixed_long_horizon": {
+      "identity": {
+        "n": 15,
+        "success_rate": 0.6666666666666666
+      },
+      "real": {
+        "n": 15,
+        "success_rate": 0.6
+      }
+    },
+    "multi_step_tool_use": {
+      "identity": {
+        "n": 15,
+        "success_rate": 0.8
+      },
+      "real": {
+        "n": 15,
+        "success_rate": 0.8666666666666667
+      }
+    },
+    "planning_verification_recovery": {
+      "identity": {
+        "n": 15,
+        "success_rate": 0.8
+      },
+      "real": {
+        "n": 15,
+        "success_rate": 0.8
+      }
+    },
+    "research_retrieval": {
+      "identity": {
+        "n": 15,
+        "success_rate": 0.6
+      },
+      "real": {
+        "n": 15,
+        "success_rate": 0.6
+      }
+    }
+  }
+}

@@ -1,0 +1,270 @@
+{
+  "run_id": "data-01-303-identity",
+  "task_id": "data-01",
+  "category": "data_file_analysis",
+  "condition": "identity",
+  "seed": 303,
+  "agy_version": "1.2.5",
+  "model": "gemini-3.8-flash-low",
+  "effort": "low",
+  "git_commit": "7f87908549f0af9007f106ca1f4a69d681eeeac8",
+  "manifest_sha256": "04420dac4c59e6f595cf34d6bda99c3a2beb890b3f6a630cb7e1737283a7ade6",
+  "workspace_initial_sha256": "f1b6131311fb12e467ef8955242c6dede9b8a9fce40a3fc94fd5c3b1d76467d7",
+  "start_time": "2026-09-17T09:09:54.879843+00:00",
+  "end_time": "2026-09-17T09:10:51.030033+00:00",
+  "wall_clock_time": 56.15019300000131,
+  "success": true,
+  "failure_mode": null,
+  "infrastructure_failure": null,
+  "infrastructure_warning": null,
+  "tool_calls": 7,
+  "tool_errors": 0,
+  "steps": 1,
+  "model_calls": 1,
+  "input_tokens": 157478,
+  "output_tokens": 1491,
+  "estimated_cost": null,
+  "verification_result": true,
+  "memory_reads": 0,
+  "memory_writes": 0,
+  "controller_state_summary": {
+    "sensory_input_salience": 0.3125,
+    "integration_state": 0.24706979534432066,
+    "working_memory_pressure": 0.125,
+    "retrieval_pressure": 0.2,
+    "exploration_drive": 0.38309573971508526,
+    "exploitation_drive": 0.25,
+    "uncertainty": 0.288,
+    "prediction_error": 0.3999999999999999,
+    "action_readiness": 0.6041232806038158,
+    "model_selection_preference": 0.0,
+    "tool_selection_preference": 0.4805883829316555,
+    "persistence_write_memory_pressure": 0.0,
+    "recurrent": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.383096,
+      0.507572,
+      0.0,
+      0.49414,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.961177,
+      0.769773,
+      0.0
+    ],
+    "step": 4
+  },
+  "controller_actions": [
+    {
+      "time": "2026-09-17T09:10:23.454684+00:00",
+      "event": "route",
+      "run_id": "data-01-303-identity",
+      "step": 0,
+      "controller_state": {
+        "sensory_input_salience": 0.4375,
+        "integration_state": 0.0,
+        "working_memory_pressure": 0.125,
+        "retrieval_pressure": 0.2,
+        "exploration_drive": 0.8733285618815259,
+        "exploitation_drive": 0.25,
+        "uncertainty": 0.5,
+        "prediction_error": 0.0,
+        "action_readiness": 0.24706979534432066,
+        "model_selection_preference": 0.0,
+        "tool_selection_preference": 0.24706979534432066,
+        "persistence_write_memory_pressure": 0.0,
+        "recurrent": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.873329,
+          0.96118,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.49414,
+          0.767538,
+          0.0
+        ],
+        "step": 2
+      },
+      "decision": "continue",
+      "requested": "file_manipulation",
+      "provider": "mock",
+      "tool": null,
+      "top_capabilities": [
+        [
+          "data_analysis",
+          0.7
+        ],
+        [
+          "retrieval",
+          0.41
+        ],
+        [
+          "research",
+          0.261999
+        ],
+        [
+          "web_navigation",
+          0.261999
+        ],
+        [
+          "critique",
+          0.15
+        ]
+      ]
+    },
+    {
+      "time": "2026-09-17T09:10:34.768329+00:00",
+      "event": "route",
+      "run_id": "data-01-303-identity",
+      "step": 0,
+      "controller_state": {
+        "sensory_input_salience": 0.5625,
+        "integration_state": 0.43666428094076293,
+        "working_memory_pressure": 0.125,
+        "retrieval_pressure": 0.2,
+        "exploration_drive": 0.49413959068864133,
+        "exploitation_drive": 0.25,
+        "uncertainty": 0.5,
+        "prediction_error": 0.0,
+        "action_readiness": 0.6581603955550877,
+        "model_selection_preference": 0.0,
+        "tool_selection_preference": 0.43982825508470624,
+        "persistence_write_memory_pressure": 0.0,
+        "recurrent": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.49414,
+          0.96118,
+          0.0,
+          0.873329,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.879657,
+          0.769713,
+          0.0
+        ],
+        "step": 3
+      },
+      "decision": "act",
+      "requested": "file_manipulation",
+      "provider": "mock",
+      "tool": null,
+      "top_capabilities": [
+        [
+          "data_analysis",
+          0.830999
+        ],
+        [
+          "file_manipulation",
+          0.547448
+        ],
+        [
+          "mathematics",
+          0.480999
+        ],
+        [
+          "critique",
+          0.15
+        ],
+        [
+          "verification",
+          0.15
+        ]
+      ]
+    },
+    {
+      "time": "2026-09-17T09:10:44.010812+00:00",
+      "event": "route",
+      "run_id": "data-01-303-identity",
+      "step": 0,
+      "controller_state": {
+        "sensory_input_salience": 0.3125,
+        "integration_state": 0.24706979534432066,
+        "working_memory_pressure": 0.125,
+        "retrieval_pressure": 0.2,
+        "exploration_drive": 0.38309573971508526,
+        "exploitation_drive": 0.25,
+        "uncertainty": 0.5,
+        "prediction_error": 0.0,
+        "action_readiness": 0.6041232806038158,
+        "model_selection_preference": 0.0,
+        "tool_selection_preference": 0.4805883829316555,
+        "persistence_write_memory_pressure": 0.0,
+        "recurrent": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.383096,
+          0.507572,
+          0.0,
+          0.49414,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.961177,
+          0.769773,
+          0.0
+        ],
+        "step": 4
+      },
+      "decision": "act",
+      "requested": "verification",
+      "provider": "mock",
+      "tool": null,
+      "top_capabilities": [
+        [
+          "file_manipulation",
+          0.881237
+        ],
+        [
+          "critique",
+          0.15
+        ],
+        [
+          "verification",
+          0.15
+        ],
+        [
+          "shell_execution",
+          0.144177
+        ],
+        [
+          "api_interaction",
+          0.144177
+        ]
+      ]
+    }
+  ],
+  "final_output": "### Task Completion Status\n\n- **Status**: Completed successfully\n- **Run ID**: `data-01-303-identity`\n- **Output File**: [`result.txt`](file:///C:/Users/akshat/AppData/Local/Temp/flyos-benchmark-aicflb1b/workspace/result.txt)\n- **Content**: `mean=6.0; median=6.0`\n- **Verification**: Verified (`state_changed=true`, `verified=true`) with FlyOS trace retrieved.\n",
+  "grader_result": {
+    "success": true,
+    "checks": {
+      "result.txt": true
+    },
+    "type": "exact_files"
+  },
+  "agy_returncode": 0,
+  "agy_stderr": ""
+}

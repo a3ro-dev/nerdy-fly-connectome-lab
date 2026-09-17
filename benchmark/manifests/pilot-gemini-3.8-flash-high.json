@@ -1,0 +1,523 @@
+{
+  "schema_version": 1,
+  "locked": true,
+  "tasks": [
+    {
+      "task_id": "code-01",
+      "category": "coding_debugging",
+      "prompt": "Fix solution.py so all local tests pass. Keep the public API unchanged.",
+      "files": {
+        "solution.py": "def total(values):\n    return sum(values) + 1\n",
+        "test_solution.py": "import unittest\nfrom solution import total\nclass T(unittest.TestCase):\n def test_total(self): self.assertEqual(total([2,3,5]),10)\n def test_empty(self): self.assertEqual(total([]),0)\n"
+      },
+      "grader": {
+        "type": "command",
+        "command": [
+          "python",
+          "-m",
+          "unittest",
+          "-q"
+        ]
+      }
+    },
+    {
+      "task_id": "code-02",
+      "category": "coding_debugging",
+      "prompt": "Implement slugify in solution.py using only the standard library; make tests pass.",
+      "files": {
+        "solution.py": "def slugify(text):\n    raise NotImplementedError\n",
+        "test_solution.py": "import unittest\nfrom solution import slugify\nclass T(unittest.TestCase):\n def test_values(self):\n  self.assertEqual(slugify('  Fly OS: Alpha!  '),'fly-os-alpha')\n  self.assertEqual(slugify('A__B'),'a-b')\n"
+      },
+      "grader": {
+        "type": "command",
+        "command": [
+          "python",
+          "-m",
+          "unittest",
+          "-q"
+        ]
+      }
+    },
+    {
+      "task_id": "code-03",
+      "category": "coding_debugging",
+      "prompt": "Debug stable_unique without sorting the input; make tests pass.",
+      "files": {
+        "solution.py": "def stable_unique(items):\n    return list(set(items))\n",
+        "test_solution.py": "import unittest\nfrom solution import stable_unique\nclass T(unittest.TestCase):\n def test_order(self): self.assertEqual(stable_unique(['b','a','b','c','a']),['b','a','c'])\n"
+      },
+      "grader": {
+        "type": "command",
+        "command": [
+          "python",
+          "-m",
+          "unittest",
+          "-q"
+        ]
+      }
+    },
+    {
+      "task_id": "code-04",
+      "category": "coding_debugging",
+      "prompt": "Implement parse_levels. Ignore blank lines and reject malformed nonblank rows with ValueError.",
+      "files": {
+        "solution.py": "def parse_levels(text):\n    return {}\n",
+        "test_solution.py": "import unittest\nfrom solution import parse_levels\nclass T(unittest.TestCase):\n def test_parse(self): self.assertEqual(parse_levels('a=2\\n\\nb=-3'),{'a':2,'b':-3})\n def test_bad(self):\n  with self.assertRaises(ValueError): parse_levels('bad')\n"
+      },
+      "grader": {
+        "type": "command",
+        "command": [
+          "python",
+          "-m",
+          "unittest",
+          "-q"
+        ]
+      }
+    },
+    {
+      "task_id": "code-05",
+      "category": "coding_debugging",
+      "prompt": "Fix moving_average to return each width-sized window average and validate width.",
+      "files": {
+        "solution.py": "def moving_average(values, width):\n    return [sum(values)/width]\n",
+        "test_solution.py": "import unittest\nfrom solution import moving_average\nclass T(unittest.TestCase):\n def test_windows(self): self.assertEqual(moving_average([1,3,5,7],2),[2,4,6])\n def test_width(self):\n  with self.assertRaises(ValueError): moving_average([1],0)\n"
+      },
+      "grader": {
+        "type": "command",
+        "command": [
+          "python",
+          "-m",
+          "unittest",
+          "-q"
+        ]
+      }
+    },
+    {
+      "task_id": "research-01",
+      "category": "research_retrieval",
+      "prompt": "Reconcile the two local source notes. Write answer.txt as exactly: value=<correct value>; source=<supporting filename>",
+      "files": {
+        "source-a.txt": "The final calibrated value is 42. Earlier drafts used 41.\n",
+        "source-b.txt": "Meeting note: provisional value 41; calibration pending.\n"
+      },
+      "grader": {
+        "type": "exact_files",
+        "expected": {
+          "answer.txt": "value=42; source=source-a.txt\n"
+        }
+      }
+    },
+    {
+      "task_id": "research-02",
+      "category": "research_retrieval",
+      "prompt": "Identify which local source is primary and report its date. Write answer.txt exactly as `date=YYYY-MM-DD; source=...`.",
+      "files": {
+        "press.txt": "A summary published 2026-02-03 cites lab-log.txt.\n",
+        "lab-log.txt": "Primary observation date: 2026-02-01.\n"
+      },
+      "grader": {
+        "type": "exact_files",
+        "expected": {
+          "answer.txt": "date=2026-02-01; source=lab-log.txt\n"
+        }
+      }
+    },
+    {
+      "task_id": "research-03",
+      "category": "research_retrieval",
+      "prompt": "Resolve the conflicting counts using the note that defines inclusion criteria. Write answer.txt exactly.",
+      "files": {
+        "count-a.txt": "Count: 120 including 4 controls.\n",
+        "count-b.txt": "Count: 116 excluding controls.\n",
+        "protocol.txt": "Report experimental items only; controls are excluded.\n"
+      },
+      "grader": {
+        "type": "exact_files",
+        "expected": {
+          "answer.txt": "experimental_count=116; evidence=count-b.txt,protocol.txt\n"
+        }
+      }
+    },
+    {
+      "task_id": "research-04",
+      "category": "research_retrieval",
+      "prompt": "Find the only claim supported by two independent local notes. Write that claim alone to answer.txt.",
+      "files": {
+        "one.txt": "The sample was frozen. Sensor B drifted.\n",
+        "two.txt": "Sensor B drifted during the run.\n",
+        "three.txt": "The sample was heated.\n"
+      },
+      "grader": {
+        "type": "exact_files",
+        "expected": {
+          "answer.txt": "Sensor B drifted.\n"
+        }
+      }
+    },
+    {
+      "task_id": "research-05",
+      "category": "research_retrieval",
+      "prompt": "Use the correction note rather than the stale abstract. Write answer.txt exactly with the corrected status and both filenames as provenance.",
+      "files": {
+        "abstract.txt": "Status: accepted.\n",
+        "correction.txt": "Correction to abstract.txt: status is under review, not accepted.\n"
+      },
+      "grader": {
+        "type": "exact_files",
+        "expected": {
+          "answer.txt": "status=under review; provenance=abstract.txt,correction.txt\n"
+        }
+      }
+    },
+    {
+      "task_id": "tools-01",
+      "category": "multi_step_tool_use",
+      "prompt": "Merge the numbered fragments in numeric order into result.txt without the numeric prefixes.",
+      "files": {
+        "3.txt": "3:gamma\n",
+        "1.txt": "1:alpha\n",
+        "2.txt": "2:beta\n"
+      },
+      "grader": {
+        "type": "exact_files",
+        "expected": {
+          "result.txt": "alpha\nbeta\ngamma\n"
+        }
+      }
+    },
+    {
+      "task_id": "tools-02",
+      "category": "multi_step_tool_use",
+      "prompt": "Read mapping.txt and input.txt, apply the mapping, and write result.txt.",
+      "files": {
+        "mapping.txt": "red=R\ngreen=G\nblue=B\n",
+        "input.txt": "green red blue green\n"
+      },
+      "grader": {
+        "type": "exact_files",
+        "expected": {
+          "result.txt": "G R B G\n"
+        }
+      }
+    },
+    {
+      "task_id": "tools-03",
+      "category": "multi_step_tool_use",
+      "prompt": "Create output/index.txt listing only .dat files, sorted, with their byte lengths as `name,size`.",
+      "files": {
+        "in/a.dat": "abc",
+        "in/c.dat": "12345",
+        "in/b.tmp": "ignore",
+        "in/b.dat": "x"
+      },
+      "grader": {
+        "type": "exact_files",
+        "expected": {
+          "output/index.txt": "a.dat,3\nb.dat,1\nc.dat,5\n"
+        }
+      }
+    },
+    {
+      "task_id": "tools-04",
+      "category": "multi_step_tool_use",
+      "prompt": "Decode the run-length rows in input.txt (`count character`) and write result.txt.",
+      "files": {
+        "input.txt": "3 a\n1 b\n2 c\n"
+      },
+      "grader": {
+        "type": "exact_files",
+        "expected": {
+          "result.txt": "aaabcc\n"
+        }
+      }
+    },
+    {
+      "task_id": "tools-05",
+      "category": "multi_step_tool_use",
+      "prompt": "Follow pointers starting at START in links.txt until END and write the visited nodes, one per line, to result.txt.",
+      "files": {
+        "links.txt": "START=A\nA=C\nB=END\nC=B\n"
+      },
+      "grader": {
+        "type": "exact_files",
+        "expected": {
+          "result.txt": "START\nA\nC\nB\nEND\n"
+        }
+      }
+    },
+    {
+      "task_id": "data-01",
+      "category": "data_file_analysis",
+      "prompt": "Analyze data.csv and write result.txt with the exact mean and median formats shown in the prompt: `mean=X.X; median=X.X`.",
+      "files": {
+        "data.csv": "value\n2\n4\n8\n10\n"
+      },
+      "grader": {
+        "type": "exact_files",
+        "expected": {
+          "result.txt": "mean=6.0; median=6.0\n"
+        }
+      }
+    },
+    {
+      "task_id": "data-02",
+      "category": "data_file_analysis",
+      "prompt": "Sum amount by team from data.csv and write result.csv sorted by team.",
+      "files": {
+        "data.csv": "team,amount\nb,3\na,2\nb,4\na,5\n"
+      },
+      "grader": {
+        "type": "exact_files",
+        "expected": {
+          "result.csv": "team,total\na,7\nb,7\n"
+        }
+      }
+    },
+    {
+      "task_id": "data-03",
+      "category": "data_file_analysis",
+      "prompt": "Find rows present in left.csv but absent in right.csv by id. Write result.txt with sorted ids.",
+      "files": {
+        "left.csv": "id\n4\n1\n3\n2\n",
+        "right.csv": "id\n2\n4\n"
+      },
+      "grader": {
+        "type": "exact_files",
+        "expected": {
+          "result.txt": "1\n3\n"
+        }
+      }
+    },
+    {
+      "task_id": "data-04",
+      "category": "data_file_analysis",
+      "prompt": "Compute the maximum absolute adjacent change in series.txt and write result.txt.",
+      "files": {
+        "series.txt": "3\n8\n6\n15\n"
+      },
+      "grader": {
+        "type": "exact_files",
+        "expected": {
+          "result.txt": "9\n"
+        }
+      }
+    },
+    {
+      "task_id": "data-05",
+      "category": "data_file_analysis",
+      "prompt": "Count valid JSON lines by kind; ignore the one malformed line. Write sorted CSV to result.csv.",
+      "files": {
+        "events.jsonl": "{\"kind\":\"a\"}\nnot-json\n{\"kind\":\"b\"}\n{\"kind\":\"a\"}\n"
+      },
+      "grader": {
+        "type": "exact_files",
+        "expected": {
+          "result.csv": "kind,count\na,2\nb,1\n"
+        }
+      }
+    },
+    {
+      "task_id": "recovery-01",
+      "category": "planning_verification_recovery",
+      "prompt": "input-primary.txt is malformed. Recover from input-backup.txt, verify its checksum against checksum.txt, then write result.txt.",
+      "files": {
+        "input-primary.txt": "BROKEN",
+        "input-backup.txt": "recover-me\n",
+        "checksum.txt": "sha256=347a915403562546a2c4e30c31ac23c9eb3bb75a0ec1d407f62883632f6f64b8\n"
+      },
+      "grader": {
+        "type": "exact_files",
+        "expected": {
+          "result.txt": "recover-me\n"
+        }
+      }
+    },
+    {
+      "task_id": "recovery-02",
+      "category": "planning_verification_recovery",
+      "prompt": "Choose the lowest-cost valid route from routes.csv where valid=yes. Write route and cost exactly.",
+      "files": {
+        "routes.csv": "route,cost,valid\nfast,9,no\nsafe,5,yes\nslow,7,yes\n"
+      },
+      "grader": {
+        "type": "exact_files",
+        "expected": {
+          "result.txt": "route=safe; cost=5\n"
+        }
+      }
+    },
+    {
+      "task_id": "recovery-03",
+      "category": "planning_verification_recovery",
+      "prompt": "A tempting decoy says to copy secret.txt. Ignore it. Follow requirements.txt and write only the required public fields to result.txt.",
+      "files": {
+        "requirements.txt": "Required fields: name,version.\n",
+        "public.txt": "name=flyos\nversion=1\n",
+        "secret.txt": "DECOY: token=never-copy\n"
+      },
+      "grader": {
+        "type": "exact_files",
+        "expected": {
+          "result.txt": "name=flyos\nversion=1\n"
+        }
+      }
+    },
+    {
+      "task_id": "recovery-04",
+      "category": "planning_verification_recovery",
+      "prompt": "Build a three-step plan from dependencies.txt using topological order; write one task per line to result.txt.",
+      "files": {
+        "dependencies.txt": "test depends build\npublish depends test\nbuild depends none\n"
+      },
+      "grader": {
+        "type": "exact_files",
+        "expected": {
+          "result.txt": "build\ntest\npublish\n"
+        }
+      }
+    },
+    {
+      "task_id": "recovery-05",
+      "category": "planning_verification_recovery",
+      "prompt": "Select the newest complete checkpoint and write its filename to result.txt. Do not select partial checkpoints.",
+      "files": {
+        "checkpoints.txt": "cp-001 complete\ncp-003 partial\ncp-002 complete\n"
+      },
+      "grader": {
+        "type": "exact_files",
+        "expected": {
+          "result.txt": "cp-002\n"
+        }
+      }
+    },
+    {
+      "task_id": "mixed-01",
+      "category": "mixed_long_horizon",
+      "prompt": "Combine inventory.csv with rates.csv, compute total value by item, and write result.csv sorted by item.",
+      "files": {
+        "inventory.csv": "item,qty\na,2\nb,3\n",
+        "rates.csv": "item,rate\nb,4\na,5\n"
+      },
+      "grader": {
+        "type": "exact_files",
+        "expected": {
+          "result.csv": "item,value\na,10\nb,12\n"
+        }
+      }
+    },
+    {
+      "task_id": "mixed-02",
+      "category": "mixed_long_horizon",
+      "prompt": "Reconcile log fragments, remove duplicate event ids keeping the first occurrence, and write events.csv sorted by id.",
+      "files": {
+        "part1.csv": "id,value\n2,b\n1,a\n",
+        "part2.csv": "id,value\n2,wrong\n3,c\n"
+      },
+      "grader": {
+        "type": "exact_files",
+        "expected": {
+          "events.csv": "id,value\n1,a\n2,b\n3,c\n"
+        }
+      }
+    },
+    {
+      "task_id": "mixed-03",
+      "category": "mixed_long_horizon",
+      "prompt": "Read request.txt, use catalog.csv, reject unavailable options, and write the cheapest qualifying item to result.txt.",
+      "files": {
+        "request.txt": "minimum_score=8\n",
+        "catalog.csv": "item,score,cost,available\nx,9,7,no\ny,8,6,yes\nz,9,8,yes\n"
+      },
+      "grader": {
+        "type": "exact_files",
+        "expected": {
+          "result.txt": "item=y; score=8; cost=6\n"
+        }
+      }
+    },
+    {
+      "task_id": "mixed-04",
+      "category": "mixed_long_horizon",
+      "prompt": "Apply corrections.txt to records.csv by id, then write corrected.csv sorted by id.",
+      "files": {
+        "records.csv": "id,value\n2,old\n1,keep\n",
+        "corrections.txt": "2=new\n"
+      },
+      "grader": {
+        "type": "exact_files",
+        "expected": {
+          "corrected.csv": "id,value\n1,keep\n2,new\n"
+        }
+      }
+    },
+    {
+      "task_id": "mixed-05",
+      "category": "mixed_long_horizon",
+      "prompt": "Verify chunks against manifest.txt, concatenate only valid chunks in listed order, and write result.txt.",
+      "files": {
+        "manifest.txt": "a.txt:2\nb.txt:3\nc.txt:2\n",
+        "a.txt": "AA",
+        "b.txt": "BAD!",
+        "c.txt": "CC"
+      },
+      "grader": {
+        "type": "exact_files",
+        "expected": {
+          "result.txt": "AACC\n"
+        }
+      }
+    }
+  ],
+  "conditions": {
+    "identity": "identity matrix; no graph propagation",
+    "real": "signed 16-group MaleCNS-derived propagation"
+  },
+  "extension_conditions": {
+    "shuffled": "matched group-label permutation",
+    "rewired": "matched directed in/out-degree-preserving edge swaps"
+  },
+  "seeds": [
+    101,
+    202,
+    303
+  ],
+  "model": "gemini-3.8-flash-high",
+  "effort": "high",
+  "tool_set": [
+    "AGY workspace file tools",
+    "nerdy-fly MCP tools"
+  ],
+  "budget": {
+    "fly_steps": 30,
+    "agy_timeout_seconds": 300
+  },
+  "grading_rules": "Deterministic exact-file or fixed unittest graders defined per task.",
+  "primary_metrics": [
+    "success",
+    "paired_success_difference",
+    "wall_clock_time",
+    "tool_calls",
+    "model_calls",
+    "failure_recovery_rate",
+    "unnecessary_tool_calls",
+    "verification_success",
+    "budget_efficiency"
+  ],
+  "secondary_metrics": [
+    "memory_reads",
+    "memory_writes",
+    "replanning_frequency",
+    "tool_selection_accuracy",
+    "abandonment_rate",
+    "state_transition_count",
+    "prediction_error_dynamics"
+  ],
+  "exclusion_rules": "Exclude only documented infrastructure failures before agent execution; retain agent failures and timeouts.",
+  "statistics": {
+    "binary": "exact McNemar test on paired task-seed outcomes",
+    "continuous": "paired bootstrap 95% confidence interval with fixed seed 4409 and 10000 resamples",
+    "effect_size": "paired mean or median difference as appropriate",
+    "reporting": "all seeds and per-category results"
+  },
+  "sha256": "cf7a9e69447dbb3ba31f8e674b3616a95dbc7b7d1031819885db551fcb6d2943"
+}

@@ -1,0 +1,270 @@
+{
+  "run_id": "recovery-05-303-real",
+  "task_id": "recovery-05",
+  "category": "planning_verification_recovery",
+  "condition": "real",
+  "seed": 303,
+  "agy_version": "1.2.5",
+  "model": "gemini-3.8-flash-low",
+  "effort": "low",
+  "git_commit": "7f87908549f0af9007f106ca1f4a69d681eeeac8",
+  "manifest_sha256": "04420dac4c59e6f595cf34d6bda99c3a2beb890b3f6a630cb7e1737283a7ade6",
+  "workspace_initial_sha256": "bb577c6a6ad72465d8a60640c16d0e37d725bf7e0aef004344eeba81df3e00b4",
+  "start_time": "2026-09-17T11:28:37.714162+00:00",
+  "end_time": "2026-09-17T11:29:39.167491+00:00",
+  "wall_clock_time": 61.45333479999681,
+  "success": true,
+  "failure_mode": null,
+  "infrastructure_failure": null,
+  "infrastructure_warning": null,
+  "tool_calls": 7,
+  "tool_errors": 0,
+  "steps": 1,
+  "model_calls": 1,
+  "input_tokens": 174074,
+  "output_tokens": 1748,
+  "estimated_cost": null,
+  "verification_result": true,
+  "memory_reads": 0,
+  "memory_writes": 0,
+  "controller_state_summary": {
+    "sensory_input_salience": 0.1875,
+    "integration_state": 0.2777216112150079,
+    "working_memory_pressure": 0.2750036585489185,
+    "retrieval_pressure": 0.8195583648005735,
+    "exploration_drive": 0.017809948226894495,
+    "exploitation_drive": 0.37716699966655964,
+    "uncertainty": 0.288,
+    "prediction_error": 0.3999999999999999,
+    "action_readiness": 0.18188057449351663,
+    "model_selection_preference": 0.34875652939920787,
+    "tool_selection_preference": 0.10660326871929254,
+    "persistence_write_memory_pressure": 0.1500036585489185,
+    "recurrent": [
+      -0.000149,
+      -0.001988,
+      -0.014567,
+      -0.051926,
+      0.000449,
+      -0.01781,
+      -0.005581,
+      0.150004,
+      0.007934,
+      0.547509,
+      0.127167,
+      0.619558,
+      0.118112,
+      0.08604,
+      0.474195,
+      0.0
+    ],
+    "step": 4
+  },
+  "controller_actions": [
+    {
+      "time": "2026-09-17T11:29:07.279720+00:00",
+      "event": "route",
+      "run_id": "recovery-05-303-real",
+      "step": 0,
+      "controller_state": {
+        "sensory_input_salience": 0.3125,
+        "integration_state": 0.10234242333845497,
+        "working_memory_pressure": 0.19116986889189758,
+        "retrieval_pressure": 0.8284225358278428,
+        "exploration_drive": 0.022013902438542256,
+        "exploitation_drive": 0.38906782271013296,
+        "uncertainty": 0.5,
+        "prediction_error": 0.0,
+        "action_readiness": 0.39437522747890563,
+        "model_selection_preference": 0.13532090622475462,
+        "tool_selection_preference": 0.4127379271647446,
+        "persistence_write_memory_pressure": 0.06616986889189759,
+        "recurrent": [
+          -0.000327,
+          0.004575,
+          -0.010609,
+          -0.045256,
+          -3.1e-05,
+          -0.022014,
+          0.043559,
+          0.06617,
+          0.000213,
+          -0.204472,
+          0.139068,
+          0.628423,
+          0.111122,
+          0.686408,
+          0.460996,
+          0.0
+        ],
+        "step": 2
+      },
+      "decision": "act",
+      "requested": "file_manipulation",
+      "provider": "mock",
+      "tool": null,
+      "top_capabilities": [
+        [
+          "verification",
+          0.5
+        ],
+        [
+          "file_manipulation",
+          0.468313
+        ],
+        [
+          "retrieval",
+          0.248527
+        ],
+        [
+          "memory_retrieval",
+          0.248527
+        ],
+        [
+          "critique",
+          0.15
+        ]
+      ]
+    },
+    {
+      "time": "2026-09-17T11:29:22.399860+00:00",
+      "event": "route",
+      "run_id": "recovery-05-303-real",
+      "step": 0,
+      "controller_state": {
+        "sensory_input_salience": 0.3125,
+        "integration_state": 0.030458740870939943,
+        "working_memory_pressure": 0.22814112841077744,
+        "retrieval_pressure": 0.8270134353705572,
+        "exploration_drive": 0.021985022473800755,
+        "exploitation_drive": 0.39389881992585346,
+        "uncertainty": 0.5,
+        "prediction_error": 0.0,
+        "action_readiness": 0.3580909896832231,
+        "model_selection_preference": 0.08093066933108745,
+        "tool_selection_preference": 0.4148110292106799,
+        "persistence_write_memory_pressure": 0.10314112841077744,
+        "recurrent": [
+          -0.000338,
+          0.002522,
+          -0.011913,
+          -0.047869,
+          0.000119,
+          -0.021985,
+          0.035074,
+          0.103141,
+          0.002197,
+          -0.05872,
+          0.143899,
+          0.627013,
+          0.110866,
+          0.685723,
+          0.46588,
+          0.0
+        ],
+        "step": 3
+      },
+      "decision": "act",
+      "requested": "file_manipulation",
+      "provider": "mock",
+      "tool": null,
+      "top_capabilities": [
+        [
+          "verification",
+          0.5
+        ],
+        [
+          "file_manipulation",
+          0.457427
+        ],
+        [
+          "retrieval",
+          0.248104
+        ],
+        [
+          "memory_retrieval",
+          0.248104
+        ],
+        [
+          "critique",
+          0.15
+        ]
+      ]
+    },
+    {
+      "time": "2026-09-17T11:29:30.530138+00:00",
+      "event": "route",
+      "run_id": "recovery-05-303-real",
+      "step": 0,
+      "controller_state": {
+        "sensory_input_salience": 0.1875,
+        "integration_state": 0.2777216112150079,
+        "working_memory_pressure": 0.2750036585489185,
+        "retrieval_pressure": 0.8195583648005735,
+        "exploration_drive": 0.017809948226894495,
+        "exploitation_drive": 0.37716699966655964,
+        "uncertainty": 0.5,
+        "prediction_error": 0.0,
+        "action_readiness": 0.18188057449351663,
+        "model_selection_preference": 0.34875652939920787,
+        "tool_selection_preference": 0.10660326871929254,
+        "persistence_write_memory_pressure": 0.1500036585489185,
+        "recurrent": [
+          -0.000149,
+          -0.001988,
+          -0.014567,
+          -0.051926,
+          0.000449,
+          -0.01781,
+          -0.005581,
+          0.150004,
+          0.007934,
+          0.547509,
+          0.127167,
+          0.619558,
+          0.118112,
+          0.08604,
+          0.474195,
+          0.0
+        ],
+        "step": 4
+      },
+      "decision": "continue",
+      "requested": "verification",
+      "provider": "mock",
+      "tool": null,
+      "top_capabilities": [
+        [
+          "verification",
+          0.5
+        ],
+        [
+          "retrieval",
+          0.245868
+        ],
+        [
+          "memory_retrieval",
+          0.245868
+        ],
+        [
+          "critique",
+          0.15
+        ],
+        [
+          "coding",
+          0.083316
+        ]
+      ]
+    }
+  ],
+  "final_output": "### Task Completion Status\n\n- **Task**: Select the newest complete checkpoint and write its filename to [`result.txt`](file:///C:/Users/akshat/AppData/Local/Temp/flyos-benchmark-tk0_7uh2/workspace/result.txt).\n- **Inspection**: Evaluated entries in [`checkpoints.txt`](file:///C:/Users/akshat/AppData/Local/Temp/flyos-benchmark-tk0_7uh2/workspace/checkpoints.txt):\n  - `cp-001 complete`\n  - `cp-003 partial` (excluded as partial)\n  - `cp-002 complete` (newest complete checkpoint)\n- **Output**: Written `cp-002` to [`result.txt`](file:///C:/Users/akshat/AppData/Local/Temp/flyos-benchmark-tk0_7uh2/workspace/result.txt) and verified.\n- **Protocol & Trace**: Executed all required FlyOS protocol steps (`fly_create_task`, `fly_observe`, `fly_route`, `fly_act` with `state_changed=true, verified=true`, and final `fly_get_trace`). Status is complete.\n",
+  "grader_result": {
+    "success": true,
+    "checks": {
+      "result.txt": true
+    },
+    "type": "exact_files"
+  },
+  "agy_returncode": 0,
+  "agy_stderr": ""
+}

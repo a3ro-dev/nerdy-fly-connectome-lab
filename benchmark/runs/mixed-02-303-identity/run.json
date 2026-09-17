@@ -1,0 +1,335 @@
+{
+  "run_id": "mixed-02-303-identity",
+  "task_id": "mixed-02",
+  "category": "mixed_long_horizon",
+  "condition": "identity",
+  "seed": 303,
+  "agy_version": "1.2.5",
+  "model": "gemini-3.8-flash-low",
+  "effort": "low",
+  "git_commit": "7f87908549f0af9007f106ca1f4a69d681eeeac8",
+  "manifest_sha256": "04420dac4c59e6f595cf34d6bda99c3a2beb890b3f6a630cb7e1737283a7ade6",
+  "workspace_initial_sha256": "b8c75d32adced1ad5d0b8f82e744612786cafe86800e14c342dd478feef3175f",
+  "start_time": "2026-09-17T11:39:39.609932+00:00",
+  "end_time": "2026-09-17T11:40:39.829157+00:00",
+  "wall_clock_time": 60.219229299997096,
+  "success": true,
+  "failure_mode": null,
+  "infrastructure_failure": null,
+  "infrastructure_warning": null,
+  "tool_calls": 9,
+  "tool_errors": 0,
+  "steps": 1,
+  "model_calls": 1,
+  "input_tokens": 193695,
+  "output_tokens": 2120,
+  "estimated_cost": null,
+  "verification_result": true,
+  "memory_reads": 0,
+  "memory_writes": 0,
+  "controller_state_summary": {
+    "sensory_input_salience": 0.3125,
+    "integration_state": 0.2475386752510958,
+    "working_memory_pressure": 0.125,
+    "retrieval_pressure": 1.0,
+    "exploration_drive": 0.0,
+    "exploitation_drive": 0.25,
+    "uncertainty": 0.288,
+    "prediction_error": 0.3999999999999999,
+    "action_readiness": 0.2860554789075369,
+    "model_selection_preference": 0.2475386752510958,
+    "tool_selection_preference": 0.162286141281989,
+    "persistence_write_memory_pressure": 0.0,
+    "recurrent": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.881225,
+      0.0,
+      0.0,
+      0.495077,
+      0.0,
+      0.873329,
+      0.0,
+      0.324572,
+      0.769775,
+      0.0
+    ],
+    "step": 5
+  },
+  "controller_actions": [
+    {
+      "time": "2026-09-17T11:40:03.350638+00:00",
+      "event": "route",
+      "run_id": "mixed-02-303-identity",
+      "step": 0,
+      "controller_state": {
+        "sensory_input_salience": 0.1875,
+        "integration_state": 0.24706979534432066,
+        "working_memory_pressure": 0.125,
+        "retrieval_pressure": 0.2,
+        "exploration_drive": 0.0,
+        "exploitation_drive": 0.25,
+        "uncertainty": 0.5,
+        "prediction_error": 0.0,
+        "action_readiness": 0.5641376476035941,
+        "model_selection_preference": 0.24706979534432066,
+        "tool_selection_preference": 0.4406027499314338,
+        "persistence_write_memory_pressure": 0.0,
+        "recurrent": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.49414,
+          0.0,
+          0.0,
+          0.49414,
+          0.0,
+          0.0,
+          0.0,
+          0.881205,
+          0.767538,
+          0.0
+        ],
+        "step": 2
+      },
+      "decision": "act",
+      "requested": "file_manipulation",
+      "provider": "mock",
+      "tool": null,
+      "top_capabilities": [
+        [
+          "file_manipulation",
+          0.519241
+        ],
+        [
+          "critique",
+          0.15
+        ],
+        [
+          "verification",
+          0.15
+        ],
+        [
+          "shell_execution",
+          0.132181
+        ],
+        [
+          "api_interaction",
+          0.132181
+        ]
+      ]
+    },
+    {
+      "time": "2026-09-17T11:40:08.603085+00:00",
+      "event": "route",
+      "run_id": "mixed-02-303-identity",
+      "step": 0,
+      "controller_state": {
+        "sensory_input_salience": 0.1875,
+        "integration_state": 0.19154786985754263,
+        "working_memory_pressure": 0.125,
+        "retrieval_pressure": 0.2,
+        "exploration_drive": 0.0,
+        "exploitation_drive": 0.25,
+        "uncertainty": 0.5,
+        "prediction_error": 0.0,
+        "action_readiness": 0.3435097415556242,
+        "model_selection_preference": 0.19154786985754263,
+        "tool_selection_preference": 0.2477358066268529,
+        "persistence_write_memory_pressure": 0.0,
+        "recurrent": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.879657,
+          0.0,
+          0.0,
+          0.383096,
+          0.0,
+          0.0,
+          0.0,
+          0.495472,
+          0.769713,
+          0.0
+        ],
+        "step": 3
+      },
+      "decision": "continue",
+      "requested": "file_manipulation",
+      "provider": "mock",
+      "tool": null,
+      "top_capabilities": [
+        [
+          "data_analysis",
+          0.407464
+        ],
+        [
+          "critique",
+          0.15
+        ],
+        [
+          "verification",
+          0.15
+        ],
+        [
+          "file_manipulation",
+          0.103053
+        ],
+        [
+          "shell_execution",
+          0.074321
+        ]
+      ]
+    },
+    {
+      "time": "2026-09-17T11:40:21.820790+00:00",
+      "event": "route",
+      "run_id": "mixed-02-303-identity",
+      "step": 0,
+      "controller_state": {
+        "sensory_input_salience": 0.3125,
+        "integration_state": 0.43942862621703394,
+        "working_memory_pressure": 0.125,
+        "retrieval_pressure": 0.2,
+        "exploration_drive": 0.0,
+        "exploitation_drive": 0.25,
+        "uncertainty": 0.5,
+        "prediction_error": 0.0,
+        "action_readiness": 0.41156886111250635,
+        "model_selection_preference": 0.43942862621703394,
+        "tool_selection_preference": 0.1918545480039894,
+        "persistence_write_memory_pressure": 0.0,
+        "recurrent": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.881221,
+          0.0,
+          0.0,
+          0.878857,
+          0.0,
+          0.0,
+          0.0,
+          0.383709,
+          0.769773,
+          0.0
+        ],
+        "step": 4
+      },
+      "decision": "act",
+      "requested": "file_manipulation",
+      "provider": "mock",
+      "tool": null,
+      "top_capabilities": [
+        [
+          "data_analysis",
+          0.481829
+        ],
+        [
+          "synthesis",
+          0.481829
+        ],
+        [
+          "critique",
+          0.15
+        ],
+        [
+          "verification",
+          0.15
+        ],
+        [
+          "coding",
+          0.131829
+        ]
+      ]
+    },
+    {
+      "time": "2026-09-17T11:40:31.032497+00:00",
+      "event": "route",
+      "run_id": "mixed-02-303-identity",
+      "step": 0,
+      "controller_state": {
+        "sensory_input_salience": 0.3125,
+        "integration_state": 0.2475386752510958,
+        "working_memory_pressure": 0.125,
+        "retrieval_pressure": 1.0,
+        "exploration_drive": 0.0,
+        "exploitation_drive": 0.25,
+        "uncertainty": 0.5,
+        "prediction_error": 0.0,
+        "action_readiness": 0.2860554789075369,
+        "model_selection_preference": 0.2475386752510958,
+        "tool_selection_preference": 0.162286141281989,
+        "persistence_write_memory_pressure": 0.0,
+        "recurrent": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.881225,
+          0.0,
+          0.0,
+          0.495077,
+          0.0,
+          0.873329,
+          0.0,
+          0.324572,
+          0.769775,
+          0.0
+        ],
+        "step": 5
+      },
+      "decision": "continue",
+      "requested": "verification",
+      "provider": "mock",
+      "tool": null,
+      "top_capabilities": [
+        [
+          "verification",
+          0.5
+        ],
+        [
+          "data_analysis",
+          0.424262
+        ],
+        [
+          "retrieval",
+          0.3
+        ],
+        [
+          "memory_retrieval",
+          0.3
+        ],
+        [
+          "critique",
+          0.15
+        ]
+      ]
+    }
+  ],
+  "final_output": "### Completion Status\n\n- **Task Run ID**: `mixed-02-303-identity`\n- **Output File**: [events.csv](file:///C:/Users/akshat/AppData/Local/Temp/flyos-benchmark-cypigaje/workspace/events.csv)\n- **Status**: Completed & Verified (`verified=true`, `state_changed=true`)\n- **Summary**:\n  - Reconciled fragments from [part1.csv](file:///C:/Users/akshat/AppData/Local/Temp/flyos-benchmark-cypigaje/workspace/part1.csv) and [part2.csv](file:///C:/Users/akshat/AppData/Local/Temp/flyos-benchmark-cypigaje/workspace/part2.csv).\n  - Deduplicated event IDs while retaining the first occurrence (`id=2` retained `value=b`, omitting subsequent `value=wrong`).\n  - Output written to [events.csv](file:///C:/Users/akshat/AppData/Local/Temp/flyos-benchmark-cypigaje/workspace/events.csv) sorted by `id` in ascending order (`1,a`, `2,b`, `3,c`).\n  - FlyOS protocol followed with task initialization, observe/route cycles, verified state transition via `fly_act`, and final audit trace retrieval via `fly_get_trace`.\n",
+  "grader_result": {
+    "success": true,
+    "checks": {
+      "events.csv": true
+    },
+    "type": "exact_files"
+  },
+  "agy_returncode": 0,
+  "agy_stderr": ""
+}
