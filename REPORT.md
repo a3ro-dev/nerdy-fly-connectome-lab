@@ -206,3 +206,13 @@ removing experiment data. Select
 a controller, train, and run it. Raw male
 files are excluded from the distributable; the derived graph, provenance hashes,
 builders, tests, and this report are included.
+# FlyOS general-agent extension
+
+The repository now includes a model-agnostic FlyOS orchestration runtime and a
+completed 180-run AGY paired benchmark. The connectome-derived controller did
+not improve aggregate success relative to the matched identity controller:
+both passed 65/90 tasks (72.2%), with one unique win each and exact McNemar
+p=1.0. See [`benchmark/report/primary.md`](benchmark/report/primary.md) for the
+protocol, confidence intervals, category results, failure analysis, security
+constraints, limitations, and recommended next experiment. This null result
+does not alter the scientific interpretation below.

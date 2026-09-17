@@ -150,3 +150,12 @@ async function refreshInternetStatus(){
   catch{$('internet').textContent='real-web explorer has not been started';}
 }
 refreshInternetStatus();setInterval(refreshInternetStatus,5000);
+
+fetch('data/controller_comparison.json').then(r=>r.json()).then(data=>{
+  const names={identity:'identity / no propagation',real:'real connectome',shuffled:'shuffled labels',rewired:'rewired topology'};
+  const rows=Object.entries(data.conditions).map(([name,value])=>{
+    if(value.status)return `<tr><td>${esc(names[name]||name)}</td><td colspan="5">${esc(value.status)}</td></tr>`;
+    return `<tr><td>${esc(names[name]||name)}</td><td>${value.successes}/${value.n}</td><td>${value.mean_wall_clock_time.toFixed(1)}s</td><td>${value.mean_tool_calls.toFixed(2)}</td><td>${(value.verification_rate*100).toFixed(1)}%</td><td>${(value.input_tokens+value.output_tokens).toLocaleString()}</td></tr>`;
+  }).join('');
+  $('controller-comparison').innerHTML=`<table><thead><tr><th>condition</th><th>success</th><th>latency</th><th>tools</th><th>verified</th><th>tokens</th></tr></thead><tbody>${rows}</tbody></table><p>paired success Δ ${(data.paired.paired_success_difference*100).toFixed(1)} points · McNemar p=${data.paired.mcnemar_exact_p.toFixed(3)} · neutral labels; no condition is presumed better.</p>`;
+}).catch(e=>$('controller-comparison').textContent=`comparison unavailable: ${e.message}`);

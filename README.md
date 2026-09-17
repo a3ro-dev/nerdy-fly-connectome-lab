@@ -17,6 +17,50 @@ brain, mind upload, or consciousness experiment. Connectome wiring is used as a
 fixed inductive bias; browser semantics, dynamics, rewards, actions, and speech
 are engineered.
 
+## FlyOS orchestration runtime
+
+FlyOS extends the original crawler into an open, model-agnostic AI
+orchestration layer inspired by the wiring topology of the fruit-fly nervous
+system. Foundation models such as Gemini, GPT, Claude, Codex, or local models
+remain the language and reasoning engines. The reduced 16-group connectome is a
+control architecture for routing capability, tools, memory, verification, and
+stop/continue decisions. MCP is the stable tool interface.
+
+The runtime works with the connectome enabled (`real`) or disabled
+(`identity`). It also implements shuffled-label and degree-preserving rewired
+controllers for future ablations. State variables such as exploration drive,
+uncertainty, and memory pressure are engineering abstractions, not biological
+claims.
+
+AGY 1.2.5 executed the locked primary benchmark with
+`gemini-3.8-flash-low`, low effort: 30 tasks × 3 seeds × 2 conditions = 180
+runs. Identity and real each passed 65/90 tasks (72.2%). The paired success
+difference was 0.0 percentage points (bootstrap 95% CI −3.3 to +3.3 points;
+exact McNemar p=1.0). The real condition averaged 1.4 seconds less per matched
+run, but its confidence interval crossed zero. This is a null pilot result: the
+specific connectome topology did not produce an observable aggregate
+improvement on this benchmark.
+
+Read the full [paired benchmark report](benchmark/report/primary.md), the
+[machine-readable summary](benchmark/aggregate/summary.json), or the
+[run-level CSV](benchmark/aggregate/runs.csv).
+
+Run the orchestration tests and reproduce the aggregate report:
+
+```powershell
+python -m unittest discover -s tests -q
+python -m benchmark.statistics
+```
+
+To rerun the locked AGY experiment (this consumes model quota):
+
+```powershell
+python -m benchmark.runner
+```
+
+The FlyOS MCP server is configured in `.agents/mcp_config.json` and can also be
+started directly with `python -m flyos.mcp_server`.
+
 ## Run
 
 ```powershell
